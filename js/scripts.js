@@ -217,14 +217,16 @@ $(document).ready(function() {
 
 	});
 
-	$( ".catalog_thumb" ).on('mouseenter', function(e) {
-		$( this ).addClass( "z_index" );
-	});
-
-	$( ".catalog_thumb" ).on('mouseleave', function(e) {
-		setTimeout(function() {
-			$( this ).removeClass( "z_index" );
-		}, 400);
+	$( ".catalog_thumb" ).bind({
+		mouseenter: function() {
+			$( this ).addClass( "z_index" );
+		},
+		mouseleave: function() {
+			setTimeout(function() {
+				$( this ).removeClass( "z_index" );
+			}, 400);
+			
+		}
 	});
 
 
