@@ -4,8 +4,21 @@ e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+// --------------
+
 var parentBlock;
 var dropdownMenu;
+
+// --------------
+
+var cardRow;
+var countVal;
+var priceValEl;
+var priceVal;
+var countInput;
+var countVal;
+
+// --------------
 
 $(window).load(function() {
 
@@ -26,8 +39,20 @@ $(window).resize(function() {
 
 $(document).ready(function() {
 
+	// ---------------------------------------
+
 	$("[data-dropdown]").addClass("hidden");
-	$(".dropdown").addClass("hidden"); 
+	$(".dropdown").addClass("hidden");
+
+	$(".breadcrumbs ul li").each(function() {
+
+		if( $(this).index() > 0 ) {
+
+			$(this).prepend("<i class='fas fa-angle-right'></i>");
+
+		}
+
+	});
 
 	$("[data-dropdownbtn]").on('click', function(e) {
 
@@ -217,18 +242,61 @@ $(document).ready(function() {
 
 	});
 
-	$( ".catalog_thumb" ).bind({
-		mouseenter: function() {
-			$( this ).addClass( "z_index" );
-		},
-		mouseleave: function() {
-			setTimeout(function() {
-				$( this ).removeClass( "z_index" );
-			}, 400);
-			
-		}
-	});
+	// ---------------------------------------
 
+	$(".count-box button").click(function(e) {
+
+        e.preventDefault();
+        parentBlock = $(this).closest(".count-box");
+        cardRow = parentBlock.closest(".table-row");
+        priceValEl = cardRow.find(".price_val");
+        priceVal = parseInt( priceValEl.text() );
+        countInput = parentBlock.find(".count-num input");
+        countVal = countInput.val();
+
+        if(countVal == "") {
+
+            countVal = 1;
+
+        }
+
+        if( $(this).hasClass("minus-btn") && countVal > 1 ) {
+
+            countVal--;
+
+        } else if( $(this).hasClass("plus-btn")) {
+
+            countVal++;
+
+        }
+
+        countInput.val(countVal);
+        cardRow.find(".price_total_val").text(priceVal * countVal);
+
+    });
+
+
+    $(".count-num input").on("keyup", function(e) {
+
+    	cardRow = $(this).closest(".table-row");
+    	countVal = $(this).val();
+    	priceValEl = cardRow.find(".price_val");
+        priceVal = parseInt( priceValEl.text() );
+        cardRow.find(".price_total_val").text(priceVal * countVal);
+
+    });
+
+    $(".card_table .table-row .close_btn").on("click", function(e) {
+
+    	e.preventDefault();
+
+    	parentBlock = $(this).closest(".table-row");
+
+    	parentBlock.fadeOut(300);
+
+    });
+
+    // ---------------------------------------
 
 });
 
