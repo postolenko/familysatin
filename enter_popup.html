@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body class="popupshow">
 
 	<div class="wrapper">
 
@@ -220,172 +220,7 @@
 	<!-- Content -->
 		<div class="content">
 
-			<!-- Section 1 - Card Page -->
 
-			<section class="border-btn">
-				
-				<div class="row">
-					
-					<div class="breadcrumbs">
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Корзина</a></li>
-						</ul>
-					</div>
-
-					<h1>Корзина</h1>
-
-					<div class="card_sect">
-
-						<form>
-
-							<div class="card_table">
-								<div class="table-row">
-									<div class="table-cell">
-										<h3>Фото</h3>
-									</div>
-									<div class="table-cell">
-										<h3>Название товара</h3>
-									</div>
-									<div class="table-cell">
-										<h3>Артикул</h3>
-									</div>
-									<div class="table-cell">
-										<h3>Количество</h3>
-									</div>
-									<div class="table-cell">
-										<h3>Цена</h3>
-									</div>
-									<div class="table-cell">
-										<h3>Стоимость</h3>
-									</div>
-								</div>
-								<div class="table-row">
-									<div class="table-cell">
-										<div class="img-box">
-											<img src="img/img_18.jpg" alt="" />
-										</div>
-									</div>
-									<div class="table-cell">
-										<p>Постельное белье Valtery Бежевое</p>
-										<p class="grey-p">Семейный</p>
-									</div>
-									<div class="table-cell">
-										<p>01-MO-36</p>
-									</div>
-									<div class="table-cell">
-										<div class="count-box">
-											<div class="button_wrapp">
-												<button type="button" class="minus-btn"><i class="fas fa-minus"></i></button>
-											</div>
-											<div class="count-num">
-												<input type="number" placeholder="1">
-											</div>
-											<div class="button_wrapp">
-												<button type="button" class="plus-btn"><i class="fas fa-plus"></i></button>
-											</div>
-										</div>
-									</div>
-									<div class="table-cell">
-										<p><span class="price_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
-									</div>
-									<div class="table-cell">
-										<p><span class="price_total_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
-										<button type="button" class="close_btn"></button>
-									</div>
-								</div>
-								<div class="table-row">
-									<div class="table-cell">
-										<div class="img-box">
-											<img src="img/img_19.jpg" alt="" />
-										</div>
-									</div>
-									<div class="table-cell">
-										<p>Постельное белье Valtery Бежевое</p>
-										<p class="grey-p">Семейный</p>
-									</div>
-									<div class="table-cell">
-										<p>01-MO-36</p>
-									</div>
-									<div class="table-cell">
-										<div class="count-box">
-											<div class="button_wrapp">
-												<button type="button" class="minus-btn"><i class="fas fa-minus"></i></button>
-											</div>
-											<div class="count-num">
-												<input type="number" placeholder="1">
-											</div>
-											<div class="button_wrapp">
-												<button type="button" class="plus-btn"><i class="fas fa-plus"></i></button>
-											</div>
-										</div>
-									</div>
-									<div class="table-cell">
-										<p><span class="price_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
-									</div>
-									<div class="table-cell">
-										<p><span class="price_total_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
-										<button type="button" class="close_btn"></button>
-									</div>
-								</div>
-							</div>
-
-							<div class="clearfix">
-
-								<div class="totals_wrapp right">
-
-									<!-- <div class="cupon_wrapp"> -->
-									<div class="cupon_wrapp">
-										<div class="col">
-											<input type="text" placeholder="Введите код купона" >
-											<!-- <p class="cupon">YDIASDN888</p> -->
-										</div>
-										<div class="col">
-											<button type="button" class="brown_pill_2">Применить купон</button>
-											<!-- <button type="button" class="orange_pill">Купон применен</button> -->
-										</div>
-									</div>
-
-									<div class="total_result">
-										<div class="table-row">
-											<div class="cell">
-												<p>Скидка по купону:</p>
-											</div>
-											<div class="cell">
-												<p>-1000 <i class="fas fa-ruble-sign"></i></p>
-											</div>
-										</div>
-										<div class="table-row total">
-											<div class="cell">
-												<p>Общая стоимость:</p>
-											</div>
-											<div class="cell">
-												<p>12000 <i class="fas fa-ruble-sign"></i></p>
-											</div>
-										</div>
-									</div>
-
-									<div class="align-right">
-										<button type="submit" class="brown_pill brown_pill_3">Оформить заказ <i class="fas fa-angle-right"></i></button>
-									</div>
-
-								</div>						
-
-							</div>
-
-							<div class="more_shop">
-								<a href="#" class="transparent_pill">Продолжить покупки</a>
-							</div>
-
-						</form>
-
-					</div>
-
-				</div>
-
-			</section>
-
-			<!-- /Section 1 - Card Page -->
 
 		</div>
 	<!-- /Content -->
@@ -468,7 +303,68 @@
 
 	<!-- /Scroll Top -->
 
-	<!-- /Footer -->
+	<!-- Popup -->
+
+	<div class="popup_wrapp" data-popup ="popup_1" style="display: block !important;">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup">
+				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
+				<div class="popup_inner">
+					<form>
+						<h2>Вход</h2>
+						<forn>
+							<div class="inputs_wrapp">
+								<div class="input_wrapp_2">
+									<i class="fas fa-envelope-open"></i>
+	                   				<input type="email" name="" placeholder="Ваш Email">
+	                   			</div>
+	                   			<div class="input_wrapp_2">
+	                   				<i class="fas fa-lock"></i>
+	                   				<input type="password" name="" placeholder="Пароль">
+	                   			</div>
+	                   		</div>
+	               			<div class="submit_box_2">
+	               				<button type="submit" class="brown_pill">Зарегистрироваться</button>
+	               			</div>
+	               		</forn>
+	           			<p class="p-line"><span>или</span></p>
+	           			<div class="soc_wrapp">
+		           			<ul class="soc_list">
+		           				<li>
+		           					<a href="#">
+		           						<i class="vk"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="fb"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="tw"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="od"></i>
+		           					</a>
+		           				</li>
+		           			</ul>
+		           		</div>
+	       			</form>
+	       			<div class="links_wrapp">
+	       				<p><a href="#">Забыли логин или пароль?</a></p>
+	       				<p class="up_link"><a href="#">Регистрация</a><i class="fas fa-angle-right"></i></p>
+	       			</div>
+	       		</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popup -->
+
 
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>

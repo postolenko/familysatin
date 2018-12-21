@@ -1718,9 +1718,13 @@ textarea:focus {
     position: absolute;
     bottom: 5px;
     left: 50%;
+    overflow: hidden;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
 }
 
 .logo img {
@@ -1745,8 +1749,8 @@ textarea:focus {
 .row_3_content > .col:nth-child(2) {
     display: table-cell;
     vertical-align: top;
-    width: 390px;
-    padding-left: 8px;
+    width: 590px;
+    padding-left: 7px;
 }
 
 .search_wrapp {
@@ -1949,7 +1953,7 @@ textarea:focus {
 .thumb_1 {
     display: inline-table;
     vertical-align: top;
-    width: 50%;
+    width: 33.33%;
     max-width: 194px;
     margin: 1px 0 0 0;
     text-align: left;
@@ -1964,7 +1968,7 @@ textarea:focus {
 .thumb_1 .col:nth-child(2) {
     display: table-cell;
     vertical-align: middle;
-    padding: 3px 7px;
+    padding: 3px 0 3px 9px;
     width: auto;
 }
 
@@ -3056,11 +3060,94 @@ p.percents_minus {
 
 /*-- Section 6 - Main Page --*/
 
+.tape_slder_wrapp {
+    position: relative;
+}
+
 .photo_thumb {
     height: 268px;
     border: .5px solid #ffffff;
     background-size: cover;
     background-position: center;
+}
+
+.soc_link_2 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 2px 0 0 rgba(31, 28, 22, .15);
+    -moz-box-shadow: 0 2px 0 0 rgba(31, 28, 22, .15);
+    box-shadow: 0 2px 0 0 rgba(31, 28, 22, .15);
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.2;
+    font-family: "Ubuntu";
+    color: rgb(68, 43, 34);
+    text-transform: uppercase;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.soc_link_2:link,
+.soc_link_2:visited {
+    -webkit-box-shadow: 0 2px 0 0 rgba(31, 28, 22, .15);
+    -moz-box-shadow: 0 2px 0 0 rgba(31, 28, 22, .15);
+    box-shadow: 0 2px 0 0 rgba(31, 28, 22, .15);
+}
+
+.soc_link_2:active,
+.soc_link_2.active {
+    -webkit-box-shadow: 0 4px 4px 0 rgba(31, 28, 22, .3);
+    -moz-box-shadow: 0 4px 4px 0 rgba(31, 28, 22, .3);
+    box-shadow: 0 4px 4px 0 rgba(31, 28, 22, .3);
+}
+
+.soc_link_2:hover {
+    -webkit-box-shadow: 0 4px 4px 0 rgba(31, 28, 22, .3);
+    -moz-box-shadow: 0 4px 4px 0 rgba(31, 28, 22, .3);
+    box-shadow: 0 4px 4px 0 rgba(31, 28, 22, .3);
+}
+
+.soc_link_2 i {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.soc_link_2 span {
+    position: relative;
+    top: -4px;
+}
+
+.tape_slder_wrapp .soc_link_2 {
+    margin-top: -22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 /*-- /Section 6 - Main Page --*/
@@ -3539,12 +3626,11 @@ p.percents_minus {
     width: 100%;
     min-height: 162px;
     opacity: 0;
-    height: 0;
     overflow: hidden;
     z-index: -1;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -99999999px;
     padding: 20px 0;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
@@ -3568,11 +3654,11 @@ p.percents_minus {
 }
 
 .tabs-content .radio-tab:checked + .tab {
-    height: auto;
     overflow: none;
     z-index: 1;
     position: relative;
     opacity: 1;
+    left: 0;
 }
 
 .reg_form {
@@ -3672,6 +3758,7 @@ p.percents_minus {
     display: inline-block;
     vertical-align: middle;
     padding: 0 12px;
+    font-family: "Ubuntu";
     font-size: 11px;
     line-height: 14px;
     color: #907d6f;
@@ -3883,10 +3970,6 @@ p.percents_minus {
     text-align: right;
 }
 
-.transparent_pill {
-
-}
-
 .two-cols_3 .transparent_pill {
     margin: 10px 0;
 }
@@ -3900,6 +3983,29 @@ p.percents_minus {
 .brown_pill_3 .fa-check {
     margin-left: 10px;
 }
+
+.user_data {
+    padding: 8px 0 17px 0;
+}
+
+.user_data p {
+    padding: 8px 0;
+    font-family: "Ubuntu";
+    font-size: 17px;
+    line-height: 23px;    
+    color: rgb(39, 34, 32);    
+}
+
+.user_data .brown_pill_2 {
+    min-width: 220px;
+    margin: 16px 0;
+}
+
+.user_data .brown_pill_2 .fa-pencil-alt {
+    margin-right: 9px;
+}
+
+
 
 /*-- /Section 1 - Order Page --*/
 
@@ -4216,3 +4322,254 @@ p.license {
     line-height: 1.2;
     text-align: right;
 }
+
+/*-- Scroll Top --*/
+
+.scroll-top_wrapp {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 230px;
+    left: 0;
+    z-index: 10;
+}
+
+.scroll-top_wrapp .row {
+    position: relative;
+}
+
+.scroll-top {
+    /*display: block;*/
+    display: none;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(177, 116, 51);
+    position: absolute;
+    top: 0;
+    right: -12%;
+}
+
+.scroll-top .fa-angle-up {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -5px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255); 
+}
+
+/*-- /Scroll Top --*/
+
+/*-- Popups --*/
+
+body.popupshow {
+    overflow: hidden;
+    padding-right: 17px;
+}
+
+.popup_wrapp {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 15;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    outline: 0;
+}
+
+.popup_wrapp .inner_wrapp {
+    padding: 1px 2%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.popup_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+.popup {
+    max-width: 510px;
+    margin: 35px auto;
+    padding: 34px 30px 8px 30px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    -webkit-box-shadow: 0 10px 25px 0 rgba(31, 28, 22, .2);
+    -moz-box-shadow: 0 10px 25px 0 rgba(31, 28, 22, .2);
+    box-shadow: 0 10px 25px 0 rgba(31, 28, 22, .2);
+    position: relative;
+    z-index: 2;
+}
+
+.close-popup {
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 12;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-popup i {
+    position: relative;
+    top: -8px;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 1.765;
+    color: rgb(144, 125, 111);  
+}
+
+.popup_inner {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.popup h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: rgb(39, 34, 32);
+    text-align: center;
+}
+
+.popup p {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 1.2;
+    color: #272220;
+}
+
+.popup .inputs_wrapp {
+    margin: 32px 0 19px 0;
+}
+
+.submit_box_2 {
+    text-align: center;
+}
+
+.submit_box_2 .brown_pill {
+    min-width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.soc_wrapp {
+    border-bottom: 1px dashed #cebca5;
+    padding-bottom: 6px;
+}
+
+.links_wrapp {
+    margin: 16px 0;
+}
+
+.links_wrapp p {
+    padding: 2px 0;
+    text-align: center;
+}
+
+.links_wrapp p a {
+    border-bottom: 1px solid #272220;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 14px;
+    color: #272220;
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.links_wrapp p a:link,
+.links_wrapp p a:visited {
+    border-bottom: 1px solid #272220;
+}
+
+.links_wrapp p a:active,
+.links_wrapp p a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.links_wrapp p a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.links_wrapp p a.noline:link,
+.links_wrapp p a.noline:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.up_link {
+    text-transform: uppercase;
+}
+
+.links_wrapp p i {
+    margin: 1px 0 0 5px;
+}
+
+.popup_2 {
+    padding-bottom: 20px;
+}
+
+.popup_3 {
+        text-align: center;
+}
+
+.thanks {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 6px auto;
+}
+
+.popup_3 {
+    padding-bottom: 36px;
+}
+
+.popup_3 h2 {
+    padding: 7px 0;
+}
+
+.popup_3 p {
+    padding: 7px 0;
+}
+
+
+
+/*-- /Popups --*/
