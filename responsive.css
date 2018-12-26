@@ -232,6 +232,10 @@
 	    right: 4px;
 	}
 
+	.card_table .table-row:nth-child(1) .inline-table:nth-child(1) .table-cell:nth-child(1) {
+	    padding-left: 20px;
+	}
+
 	/*-- /Section 1 - Card Page --*/
 
 	/*-- Footer --*/
@@ -558,6 +562,24 @@
 	    top: -56px;
 	}
 
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) .close_btn {
+		width: 21px;
+		height: 21px;
+		margin-top: -11px;
+		background-position: 4px 2px;
+		background-size: 54%;
+		right: 11px;
+	}
+
+	.card_table .price_val,
+	.card_table .price_total_val {
+		font-size: 16px;
+	}
+
+	.table-cell p .fa-ruble-sign {
+	    font-size: 12px;
+	}
+
 	/*-- /Section 1 - Card Page --*/
 
 }
@@ -570,7 +592,7 @@
 	}
 
 	.row {
-	    padding: 0 6%;
+	    padding: 0 4%;
 	}
 
 	.offer_desc {

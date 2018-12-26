@@ -4102,7 +4102,7 @@ p.percents_minus {
     padding: 30px 10px;
 }
 
-.card_table .table-row:nth-child(1) .table-cell:nth-child(1) {
+.card_table .table-row:nth-child(1) .inline-table:nth-child(1) .table-cell:nth-child(1) {
     padding-left: 30px;
 }
 
