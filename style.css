@@ -3743,6 +3743,25 @@ p.percents_minus {
     border: 1px solid #e8e6e1;
 }
 
+.card_table .table-row .inline-table {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.card_table .table-row .inline-table:nth-child(1) {
+    width: 42%;
+}
+
+.card_table .table-row .inline-table:nth-child(2) {
+    width: 58%;
+}
+
+.card_table .table-row .inline-table .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px 10px;
+}
+
 .card_table .table-row:nth-child(1) {
     border: none;
 }
@@ -3753,44 +3772,42 @@ p.percents_minus {
     padding: 30px 10px;
 }
 
-.card_table .table-row:nth-child(1) .table-cell {
-    vertical-align: top;
-    padding-top: 18px;
-    padding-bottom: 26px;
-}
-
-.card_table .table-row:nth-child(1) .table-cell:nth-child(1) {
+.card_table .table-row:nth-child(1) .inline-table:nth-child(1) .table-cell:nth-child(1) {
     padding-left: 0;
 }
 
-.card_table .table-cell:nth-child(1) {
+.card_table .table-row:nth-child(1) .inline-table:nth-child(2) .table-cell:nth-child(1) {
+    padding-left: 10px;
+}
+
+.card_table .inline-table:nth-child(1) .table-cell:nth-child(1) {
     width: 120px;
     padding-left: 30px;
 }
 
-.card_table .table-cell:nth-child(2) {
+.card_table .inline-table:nth-child(1) .table-cell:nth-child(2) {
     width: auto;
 }
 
-.card_table .table-cell:nth-child(3) {
-    width: 15%;
+.card_table .inline-table:nth-child(2) .table-cell:nth-child(1) {
+    width: 25%;
 }
 
-.card_table .table-cell:nth-child(4) {
-    width: 17%;
+.card_table .inline-table:nth-child(2) .table-cell:nth-child(2) {
+    width: 29%;
 }
 
-.card_table .table-cell:nth-child(5) {
-    width: 11%;
+.card_table .inline-table:nth-child(2) .table-cell:nth-child(3) {
+    width: 19%;
 }
 
-.card_table .table-cell:nth-child(6) {
-    width: 15%;
+.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) {
+    width: auto;
     padding-right: 60px;
     position: relative;
 }
 
-.card_table .table-cell:nth-child(6) .close_btn {
+.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) .close_btn {
     margin-top: -8px;
     position: absolute;
     top: 50%;
@@ -4042,6 +4059,13 @@ p.percents_minus {
     top: -74px;
 }
 
+.card_table .app_p {
+    padding: 6px 0;
+}
+
+.card_table .app_p:nth-child(2) {
+    padding: 2px 0;
+}
 
 /*-- /Section 1 - Card Page --*/
 

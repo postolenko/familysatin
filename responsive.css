@@ -203,28 +203,32 @@
 
 	/*-- Section 1 - Card Page --*/
 
+	.card_table .table-row .inline-table .table-cell {
+	    padding: 19px 10px;
+	}
+
 	.card_table .table-row:nth-child(1) .table-cell {
 	    padding-top: 6px;
 	}
 
-	.card_table .table-row:nth-child(1) .table-cell:nth-child(1) {
-	    padding-left: 0;
+	.card_table .table-row:nth-child(1) .table-cell {
+	    padding-bottom: 25px;
 	}
 
 	.card_table .table-row .table-cell {
 	    padding: 19px 10px;
 	}
 
-	.card_table .table-cell:nth-child(1) {
+	.card_table .inline-table:nth-child(1) .table-cell:nth-child(1) {
 	    width: 110px;
 	    padding-left: 19px;
 	}
 
-	.card_table .table-cell:nth-child(6) {
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) {
 		padding-right: 20px;
 	}
 
-	.card_table .table-cell:nth-child(6) .close_btn {
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) .close_btn {
 	    right: 4px;
 	}
 
@@ -868,6 +872,49 @@
 
 	/*-- /Section 5 - Main Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card_table {
+		max-width: 500px;
+	    margin-top: 25px;
+	}
+
+	.card_table .table-row:nth-child(1) {
+	    display: none;
+	}
+
+	.card_table .table-row .inline-table:nth-child(1),
+	.card_table .table-row .inline-table:nth-child(2) {
+	    width: 100%;
+	}
+
+	.card_table .inline-table:nth-child(1) .table-cell:nth-child(1) {
+	    width: 150px;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(1) {
+	    display: none;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(2) {
+	    width: 150px;
+	    padding-left: 19px;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(3) {
+	    display: none;
+	}
+
+	.card_table .inline-table:nth-child(1) .table-cell {
+	    padding-bottom: 9px;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell {
+	    padding-top: 9px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 	/*-- Footer --*/
 
 	.footer_col {
@@ -880,6 +927,31 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 670px) {
+
+	/*-- Section 1 - Card Page --*/
+
+	.totals_wrapp {
+	    width: 100%;
+	}
+
+	.totals_wrapp .align-right {
+		text-align: center;
+	}
+
+	.more_shop {
+	    height: auto;
+	    text-align: center;
+	}
+
+	.more_shop .transparent_pill {
+	    top: 0;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 }
 
@@ -1102,6 +1174,15 @@
 
 	/*-- /Section 5 - Main Page --*/
 
+	.card_table .inline-table:nth-child(1) .table-cell:nth-child(1) {
+	    width: 130px;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(2) {
+	    width: 130px;
+	    padding-left: 19px;
+	}
+
 	/*-- Footer --*/
 
 	.footer_row_1 {
@@ -1136,6 +1217,38 @@
 	
 }
 
+@media only screen and (max-width: 450px) {
+
+	/*-- Section 1 - Card Page --*/
+
+	.cupon_wrapp {
+		display: block;
+		padding: 0 10px 5px 10px;
+	}
+
+	.cupon_wrapp .col:nth-child(1) {
+	    display: block;
+	    padding: 0;
+	}
+
+	.cupon_wrapp .col:nth-child(2) {
+	    display: block;
+	    width: 100%;
+	    padding: 0 10px;
+	}
+
+	.cupon_wrapp .brown_pill_2 {
+	    margin-top: 0;
+	}
+
+	.total_result .total .cell:nth-child(1) p {
+	    font-size: 15px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
+}
+
 @media only screen and (max-width: 430px) {
 
 	/*-- Section 2 - Main Page --*/
@@ -1150,6 +1263,10 @@
 
 	/*-- Section 5 - Main Page --*/
 
+	.card_table .inline-table:nth-child(1) .table-cell {
+	    padding-bottom: 2px;
+	}
+
 	.goods_slider .slick-slide {
 		text-align: center;
 	}
@@ -1160,6 +1277,19 @@
 	}
 
 	/*-- /Section 5 - Main Page --*/
+
+	/*-- Section 1 - Card Page --*/
+
+	.card_table p {
+	    font-size: 12px;
+	}
+
+	.card_table .price_val,
+	.card_table .price_total_val {
+	    font-size: 14px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 }
 
