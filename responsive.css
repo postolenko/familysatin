@@ -1489,7 +1489,7 @@
 
 	.card_table .price_val,
 	.card_table .price_total_val {
-	    font-size: 14px;
+	    font-size: 16px;
 	}
 
 	/*-- /Section 1 - Card Page --*/
@@ -1561,10 +1561,22 @@
 
 @media only screen and (max-width: 370px) {
 
+	/*-- Section 1 - Order Page --*/
+
 	.payment_thumbs {
 	    text-align: center;
 	    margin: 0 -2px;
 	}
+
+	.total_result .total .cell:nth-child(2) p {
+	    font-size: 25px;
+	}
+
+	.total_result .total .cell:nth-child(2) p i {
+	    font-size: 21px;
+	}
+
+	/*-- /Section 1 - Order Page --*/
 
 }
 
