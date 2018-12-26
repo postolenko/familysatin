@@ -610,6 +610,28 @@
 	    margin: 5px 0;
 	}
 
+	.two_cols_2 > .left {
+	    width: 100%;
+	    float: none;
+	    padding: 0;
+	}
+
+	.two_cols_2 > .right {
+	    width: 100%;
+	    float: none;
+	    padding: 0 0 0 30px;
+	}
+
+	.order_sect h5 {
+	    padding-top: 16px;
+	    padding-bottom: 14px;
+	}
+
+	.sign_box {
+		max-width: 372px;
+		margin: 18px 0;
+	}
+
 	/*-- /Section 1 - Order Page --*/
 
 }
@@ -674,6 +696,19 @@
 	.sect_4 {
 	    padding: 25px 0 14px 0;
 	}
+
+	/*-- Section 1 - Order Page --*/
+
+	.two_cols_2 > .right {
+	    padding: 0;
+	}
+
+	.reg_form {
+	    margin: 0;
+	    max-width: 100%;
+	}
+
+	/*-- /Section 1 - Order Page --*/
 
 }
 
@@ -1013,6 +1048,42 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 1 - Order Page --*/
+
+	.tabs_2 {
+	    margin: 8px 0;
+	}
+
+	.tabs-links_2 .tab-link {
+		display: block;
+	    margin: 3px 0;
+	}
+
+	.order_sect {
+	    padding: 15px 0;
+	}
+
+	.form_2 {
+	    margin: 11px 0 13px 0;
+	}
+
+	.form_2 textarea {
+	    margin: 10px 0;
+	}
+
+	.two-cols_3 .left {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.two-cols_3 .right {
+	    width: 100%;
+	    float: none;
+	    text-align: center;
+	}
+
+	/*-- /Section 1 - Order Page --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1060,6 +1131,14 @@
 
 	/*-- /Section 6 - Main Page --*/
 
+	/*--  Section 1 - Order Page --*/
+
+	.sign_box {
+	    margin: 18px auto;
+	}
+
+	/*-- /Section 1 - Order Page --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 {
@@ -1100,6 +1179,49 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 550px) {
+
+	/*-- Section 1 - Card Page --*/
+
+	.reg_form_2 > .left {
+	    width: 100%;
+	    float: none;
+	    padding: 0;
+	}
+
+	.reg_form_2 > .right {
+	    width: 100%;
+	    float: none;
+	    padding: 0;
+	}
+
+	.input-two-cols .input_wrapp:nth-child(1) {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	.input-two-cols .input_wrapp:nth-child(2) {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	.input-two-cols_3 .input_wrapp:nth-child(1) {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	.input-two-cols_3 .input_wrapp:nth-child(2) {
+	    width: calc( 50% - 4px );
+	}
+
+	.input-two-cols_3 .input_wrapp:nth-child(3) {
+	    width: calc( 50% - 4px );
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 }
 
@@ -1243,6 +1365,27 @@
 	    padding-left: 19px;
 	}
 
+	/*--  Section 1 - Order Page --*/
+
+	.tabs {
+	    margin: 10px 0;
+	}
+
+	.tabs-links .tab-link {
+	    margin: 3px 7px 3px 15px;
+	}
+
+	.sign_box {
+	    padding: 34px 20px 8px 20px;
+	}
+
+	.sign_box h2 {
+	    font-size: 30px;
+	    line-height: 32px;
+	}
+
+	/*-- /Section 1 - Order Page --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 {
@@ -1353,6 +1496,29 @@
 
 }
 
+@media only screen and (max-width: 410px) {
+
+	h1 {
+	    font-size: 20px;
+	    line-height: 25px;
+	}
+
+	/*-- Section 1 - Order Page --*/
+
+	.input-two-cols_2 .input_wrapp:nth-child(1) {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	.input-two-cols_2 .input_wrapp:nth-child(2) {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	/*-- /Section 1 - Order Page --*/
+
+}
+
 @media only screen and (max-width: 390px) {
 
 	/*-- Section 2 - Main Page --*/
@@ -1390,6 +1556,15 @@
 	}
 
 	/*-- /Section 2 - Main Page --*/
+
+}
+
+@media only screen and (max-width: 370px) {
+
+	.payment_thumbs {
+	    text-align: center;
+	    margin: 0 -2px;
+	}
 
 }
 

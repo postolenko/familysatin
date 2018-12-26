@@ -4132,6 +4132,7 @@ p.percents_minus {
 
 .tabs {
     margin: 13px 0;
+    overflow: hidden;
 }
 
 .tabs-links {
@@ -4480,13 +4481,13 @@ p.percents_minus {
 
 .tabs-links_3 .tab-link span:nth-child(1) {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
     width: 38px;
 }
 
 .tabs-links_3 .tab-link span:nth-child(2) {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
     width: auto;
 }
 
@@ -4495,22 +4496,13 @@ p.percents_minus {
     margin: 0 -2px;
 }
 
-.payment_thumbs .col:nth-child(1) {
-    display: inline-block;
-    vertical-align: top;
-    width: 114px;
-}
-
-.payment_thumbs .col:nth-child(2) {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 114px);
-}
-
-.payment_thumb {
+.payment_thumb_wrapp {
     display: inline-block;
     vertical-align: top;
     width: 109px;
+}
+
+.payment_thumb {
     height: 57px;
     margin: 2px;
     position: relative;
@@ -4521,8 +4513,7 @@ p.percents_minus {
 }
 
 .payment_thumb_1 {
-    width: 109px;
-    height: 118px;
+    height: 116px;
     margin: 2px;
     position: relative;
     border-style: solid;
