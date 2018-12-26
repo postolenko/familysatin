@@ -3099,6 +3099,8 @@ p.percents_minus {
 }
 
 .catalog_thumb h3 {
+    display: block;
+    min-height: 37px;
     font-size: 21px;
     line-height: 24px;
     color: #272220;
@@ -3876,6 +3878,7 @@ p.percents_minus {
     display: block;
     width: 100%;
     height: 46px;
+    padding: 0;
     text-align: center;
     border: 1px solid transparent;
     font-size: 15px;

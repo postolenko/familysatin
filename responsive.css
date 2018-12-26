@@ -201,6 +201,35 @@
 
 	/*-- /Section 2 - Main Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.card_table .table-row:nth-child(1) .table-cell {
+	    padding-top: 6px;
+	}
+
+	.card_table .table-row:nth-child(1) .table-cell:nth-child(1) {
+	    padding-left: 0;
+	}
+
+	.card_table .table-row .table-cell {
+	    padding: 19px 10px;
+	}
+
+	.card_table .table-cell:nth-child(1) {
+	    width: 110px;
+	    padding-left: 19px;
+	}
+
+	.card_table .table-cell:nth-child(6) {
+		padding-right: 20px;
+	}
+
+	.card_table .table-cell:nth-child(6) .close_btn {
+	    right: 4px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 .left {
@@ -262,6 +291,15 @@
 }
 
 @media only screen and (max-width: 900px) {
+
+	h1 {
+	    font-size: 26px;
+	    line-height: 30px;
+	}
+
+	.breadcrumbs {
+	    padding: 21px 0 10px 0;
+	}
 
 	/*-- Header --*/
 
@@ -501,6 +539,22 @@
 	}
 
 	/*-- /Section 2 - Main Page --*/
+
+	/*-- Section 1 - Card Page --*/
+
+	.total_result {
+	    margin: 12px 0 4px 0;
+	}
+
+	.totals_wrapp {
+	    margin: 7px 0;
+	}
+
+	.more_shop .transparent_pill {
+	    top: -56px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 
 }
 
@@ -1040,6 +1094,14 @@
 
 	/*-- /Section 3 - Main Page --*/
 
+	/*-- Section 5 - Main Page --*/
+
+	.goods_slider .slick-arrow {
+	    margin-top: 66px !important;
+	}
+
+	/*-- /Section 5 - Main Page --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 {
@@ -1072,6 +1134,33 @@
 
 	/*-- /Footer --*/
 	
+}
+
+@media only screen and (max-width: 430px) {
+
+	/*-- Section 2 - Main Page --*/
+
+	.catalog_thumb {
+		display: block;
+	    width: calc(90% - 20px);
+	    margin: 10px auto;
+	}
+
+	/*-- /Section 2 - Main Page --*/
+
+	/*-- Section 5 - Main Page --*/
+
+	.goods_slider .slick-slide {
+		text-align: center;
+	}
+
+	.goods_slider .slick-slide .catalog_thumb {
+		width: 90% !important;
+		max-width: 300px !important;
+	}
+
+	/*-- /Section 5 - Main Page --*/
+
 }
 
 @media only screen and (max-width: 390px) {
