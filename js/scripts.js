@@ -464,6 +464,31 @@ $(document).ready(function() {
         }
     });
 
+    // ----------------
+
+    $(".resp_sidebar_btn").click(function() {
+
+        $("#resp_sidebar").fadeIn(300);
+
+    });
+
+    $("#resp_sidebar .close_btn_2").click(function() {
+
+        $("#resp_sidebar").fadeOut(300);
+
+    });
+
+    $(this).keydown(function(eventObject){
+
+        if (eventObject.which == 27 &&
+            $("#resp_sidebar").is(":visible") ) {
+
+                $("#resp_sidebar").fadeOut(300);
+
+        }
+
+    });
+
 });
 
 function getFooterPosition() {

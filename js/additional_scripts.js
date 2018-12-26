@@ -2,12 +2,14 @@ $(window).on("load",function(){
 
 	$(".scroll").mCustomScrollbar();
 	getSlider();
+	getScrollSidebar();
 
 });
 
 $(window).on("resize",function(){
 
 	getSlider();
+	getScrollSidebar();
 
 });
 
@@ -158,9 +160,6 @@ function getSlider() {
 		        speed: 1200,
 		        slidesToShow: 2,
 		        slidesToScroll: 1,
-		        // infinite: true,
-		        // variableWidth: true
-		        // centerMode: true,
 		        responsive: [
 				    {
 				      breakpoint: 600,
@@ -176,7 +175,11 @@ function getSlider() {
 
 	} else {
 
-		// $(".promo_box").slick('unslick');
+		if( $(".promo_box").hasClass('slick-initialized')) {
+
+			$(".promo_box").slick("unslick");
+
+		}
 
 	}
 
@@ -222,5 +225,19 @@ function getSlider() {
 
 
 	// }
+
+}
+
+function getScrollSidebar() {
+
+	if(bodyWidth <= 750) {
+
+		$("#resp_sidebar").mCustomScrollbar();
+
+	} else {
+
+		$("#resp_sidebar").mCustomScrollbar("destroy");
+
+	}	
 
 }

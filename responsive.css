@@ -506,6 +506,11 @@
 
 @media only screen and (max-width: 768px) {
 
+	h2 {
+	    font-size: 26px;
+	    line-height: 30px;
+	}
+
 	.row {
 	    padding: 0 6%;
 	}
@@ -554,6 +559,10 @@
 	.offer_desc:after {
 	    width: 28px;
 	    height: 16px;
+	}
+
+	.sect_4 {
+	    padding: 25px 0 14px 0;
 	}
 
 }
@@ -652,8 +661,55 @@
 
 	/*-- /Section 2 - Main Page --*/
 
+	.two-cols .right {
+		width: 100%;
+		float: none;
+		padding-left: 0;
+	}
+
+	#resp_sidebar {
+		display: none;
+		width: 100%;
+		height: 100vh;
+		float: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background: #ffffff;
+		padding: 20px 5% 50px 5%;
+	}
+
+	.resp_sidebar_btn {
+	    display: block;
+	}
+
+	.resp_sidebar_wrapp {
+		position: relative;
+	}
+
+	.resp_sidebar_wrapp .resp_sidebar_btn {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
 	.catalog_header {
-		display: block;
+	    display: table;
+	    width: 100%;
+	    position: relative;
+	    padding-top: 5px;
+	    padding-left: 60px;
+	    padding-right: 0;
+	    background-color: transparent;
+	    border: 1px solid transparent;
+	    border-bottom: 1px dashed #cebca5;
+	}
+
+	.catalog_header .resp_sidebar_btn {
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
 	.catalog_header > .col:nth-child(1),
@@ -662,23 +718,13 @@
 	    width: 100%;
 	}
 
-	.catalog_header {
-	    display: table;
-	    width: 100%;
-	    position: relative;
-	    padding-top: 0;
-	    padding-left: 0;
-	    padding-right: 0;
-	    background-color: transparent;
-	    border: 1px solid transparent;
-	    border-bottom: 1px dashed #cebca5;
-	}
-
 	.filter_resp_nav {
 		display: block;
+		min-height: 100%;
+		padding: 12px 0;
 		background-color: #ffffff;
 		position: absolute;
-		top: 0;
+		top: -2px;
 		right: 110%;
 		z-index: 3;
 		-webkit-transition-property: right;
@@ -750,7 +796,23 @@
 		margin: 5px -10px 5px 0;
 	}
 
+	#resp_sidebar .close_btn_2 {
+	    display: block;
+	}
+
 	/*-- /Section 2 - Main Page --*/
+
+	/*-- Section 5 - Main Page --*/
+
+	.sect_5 {
+	    padding: 29px 0 0 0;
+	}
+
+	.goods_slider .catalog_thumb {
+	    margin: 20px 0 24px 0;
+	}
+
+	/*-- /Section 5 - Main Page --*/
 
 	/*-- Footer --*/
 
@@ -857,6 +919,16 @@
 
 @media only screen and (max-width: 480px) {
 
+	h2 {
+	    font-size: 21px;
+	    line-height: 27px;
+	}
+
+	.transparent_pill {
+		padding: 4px 10px;
+	    font-size: 12px;
+	}
+
 	/*-- Header --*/
 
 	.search_inner > .col:nth-child(1) {
@@ -880,6 +952,93 @@
 	}
 
 	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 2 - Main Page --*/
+
+	.catalog_thumbs {
+	    margin: 8px -5px 15px -5px;
+	}
+
+	.catalog_thumb {
+		width: calc(50% - 10px);
+		margin: 5px;
+	    height: 312px;
+	}
+
+	.catalog_thumb .inner {
+	    width: 100%;
+	    height: 312px;
+	    padding: 5px;
+	}
+
+	.catalog_thumb:hover .inner {
+	    height: 322px;
+	    width: calc(100% + 10px);
+	    top: -5px;
+	    left: -5px;
+	}
+
+	.catalog_thumb .img-box {
+	    height: 115px;
+	    margin-bottom: 13px;
+	}
+
+	.catalog_thumb:hover .img-box {
+	    height: 125px;
+	}
+
+	.descript_table {
+	    margin-bottom: 9px;
+	}
+
+	.descript_table p {
+	    font-size: 12px;
+	    line-height: 14px;
+	}
+
+	.old_price {
+	    padding: 5px 2px 0 2px;
+	    font-size: 15px;
+	    line-height: 25px;
+	}
+
+	.old_price .ruble {
+	    position: relative;
+	    top: 4px;
+	}
+
+	.price {
+	    font-size: 19px;
+	    line-height: 25px;
+	}
+
+	.price .ruble {
+		position: relative;
+	    top: -1px;
+	    font-size: 20px;
+	    line-height: 26px;
+	}
+
+	.price .ruble:before {
+	    height: 1px;
+	    top: 66%;
+	}
+
+	.thumb_footer .brown_pill {
+		min-width: 100%;
+	    max-width: 104px;
+	    padding: 6px 6px;
+	}
+
+	/*-- /Section 2 - Main Page --*/
+
+	/*-- Section 3 - Main Page --*/
+
+	.offer_desc .percents_minus {
+	    padding: 0 74px;
+	}
+
+	/*-- /Section 3 - Main Page --*/
 
 	/*-- Footer --*/
 
@@ -915,8 +1074,64 @@
 	
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 390px) {
 
-	
+	/*-- Section 2 - Main Page --*/
+
+	.dropdowm_select_menu_2 {
+	    width: 142px;
+	}
+
+	.dropdowm_select_menu_2 .select_input {
+	    font-size: 11px;
+	}
+
+	.dropdowm_select_menu_2 .fa-angle-down {
+	    margin-left: 0;
+	}
+
+	.resp_sidebar_wrapp .resp_sidebar_btn {
+	    left: -10px;
+	}
+
+	.catalog_header {
+	    padding-left: 40px;
+	}
+
+	.filters_resp {
+	    width: 93px;
+	}
+
+	.text_btn {
+	    font-size: 11px;
+	}
+
+	.text_btn .fa-angle-right {
+	    margin-left: 3px;
+	}
+
+	/*-- /Section 2 - Main Page --*/
+
+}
+
+@media only screen and (min-width: 901px) {
+
+	.promo_box .left {
+		display: block !important;
+		float: left !important
+	}
+
+	.promo_box .right {
+		display: block !important;
+		float: right !important
+	}
+
+}
+
+@media only screen and (min-width: 751px) {
+
+	#resp_sidebar {
+		display: block !important;
+	}
 
 }

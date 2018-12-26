@@ -539,6 +539,17 @@ textarea:focus {
     background-image: url(img/card_3.png);
 }
 
+.burger {
+    display: inline-block;
+    vertical-align: top;
+    width: 23px;
+    height: 14px;
+    background-size: contain;
+    background-image: url(img/resp_btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*-- /Icons --*/
 
 /*-- Slick --*/
@@ -2655,6 +2666,11 @@ p.percents_minus {
     padding-left: 15px;
 }
 
+#resp_sidebar .close_btn_2 {
+    display: none;
+    margin: 2px 0 0 10px;
+}
+
 .sidebar {
     max-width: 266px;
 }
@@ -2901,6 +2917,12 @@ p.percents_minus {
     width: 150px;
 }
 
+.resp_sidebar_btn {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
 .filters_resp {
     display: none;
 }
@@ -2936,10 +2958,6 @@ p.percents_minus {
 .text_btn .fa-angle-right:before {
     position: relative;
     top: 4px;
-}
-
-.filter_resp_nav {
-    /*background-color: #ffffff;*/
 }
 
 .filter_resp_nav .close_btn {
