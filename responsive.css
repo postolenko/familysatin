@@ -935,6 +935,10 @@
 	    padding-top: 9px;
 	}
 
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) .close_btn {
+	    margin-top: -15px;
+	}
+
 	/*-- /Section 1 - Card Page --*/
 
 	/*-- Footer --*/
