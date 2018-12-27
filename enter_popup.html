@@ -30,27 +30,37 @@
 
 	<!-- Header -->
 		
-	<header class="header-site">
+		<header class="header-site">
 
 		<div class="row-1">
 			<div class="row clearfix">
 				<div class="left">
-					<p class="soclink_box"><a href="#" class="soclink"><i class="fab fa-instagram"></i>Мы в Instargam - красивые фото, акции, лайктаймы. Подписывайся!</a></p>
+					<p class="soclink_box"><a href="#" class="soclink"><i class="fab fa-instagram"></i><span>Мы в Instargam - красивые фото, акции, лайктаймы. Подписывайся!</span></a></p>
 				</div>
 				<div class="right">
 					<div class="inline">
 						<div class="main-nav_wrapp">
-							<ul class="main-nav scroll">
-								<li><a href="">Контакты</a></li>
-								<li><a href="">О компании</a></li>
-								<li><a href="">Оплата и доставка</a></li>
-								<li><a href="">Обмен/Возврат</a></li>
-							</ul>
+							<div class="append-elem"  data-append-desktop-elem = "2" data-min-screen = "750">
+								<ul class="main-nav">
+									<li><a href="">Контакты</a></li>
+									<li><a href="">О компании</a></li>
+									<li><a href="">Оплата и доставка</a></li>
+									<li><a href="">Обмен/Возврат</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="inline">
-						<!-- <a href="#" class="orange_pill">Вход</a> -->
-						<a href="#" class="orange_pill">Выход</a>
+						<div class="append-elem"  data-append-desktop-elem = "1" data-min-screen = "750">
+							<!-- <a href="#" class="orange_pill">Вход</a> -->
+							<a href="#" class="orange_pill">Выход</a>
+						</div>
+					</div>
+
+					<div class="inline favorite_2_wrapp">
+						<a href="#" class="favorite_2">
+							<i class="hearth_2"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -58,6 +68,7 @@
 		<div class="row-2">
 			<div class="row clearfix">
 				<div class="left">
+					<button type="text" class="resp_btn"></button>
 					<div class="callback_wrapp">
 						<div class="callback_link">
 							<div class="col">
@@ -70,7 +81,7 @@
 								<p><a href="#" class="orange_pill">Заказать звонок</a></p>
 							</div>
 						</div>
-						<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>						
+						<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>
 					</div>
 				</div>
 				<div class="right">
@@ -83,10 +94,10 @@
 								<h3>В корзине:</h3>
 								<div class="card_vals">
 									<div>
-										<p class="line_p">2 товара</p>
+										<p class="line_p">22 товара</p>
 									</div>
 									<div>
-										<p><span class="medium">12000</span> <i class="ruble">P</i></p>
+										<p class="price_p"><span class="medium">120000</span> <i class="ruble">P</i></p>
 									</div>
 								</div>
 							</div>
@@ -132,9 +143,14 @@
 							<span class="count">17</span>
 						</a>
 					</div>
+					<a href="#" class="circle_pill card_pill_resp"><i class="card_3"></i></a>
 				</div>
 				<a href="#" class="logo">
 					<img src="img/logo.png" alt="" />
+				</a>
+
+				<a href="#" class="logo_resp">
+					<img src="img/logo_3.png" alt="" />
 				</a>
 			</div>
 		</div>
@@ -212,8 +228,72 @@
 				</div>
 			</div>
 		</div>
-								
+
 	</header>
+
+	<div class="resp_nav scroll">
+
+		<div class="resp_row">
+			<div class="resp_header">
+				<div class="col">
+					<div class="append-elem" data-append-elem = "1" ></div>
+				</div>
+				<div class="col">
+					<button type="button" class="close_btn_2"></button>
+				</div>
+			</div>
+		</div>
+		<div class="resp_row">
+			<div class="append-elem resp_menu" data-append-elem = "2" ></div>
+			<div>
+				<div class="header_card header_card_2">
+					<a href="#" class="card_link card_link_2">
+						<div class="col">
+							<i class="card_2"></i>
+						</div>
+						<div class="col">
+							<h3>В корзине:</h3>
+							<div class="card_vals">
+								<div>
+									<p class="line_p">22 товара</p>
+								</div>
+								<div>
+									<p class="price_p"><span class="medium">120000</span> <i class="ruble">P</i></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div>
+				<div class="header_card header_card_2">
+					<a href="#" class="card_link card_link_2">
+						<div class="col">
+							<div class="favorite_3">
+								<i class="hearth_3"></i>
+							</div>
+						</div>
+						<div class="col">
+							<h3>В избранном:</h3>
+							<div class="card_vals">
+								<div>
+									<p class="line_p">17 товаров</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<p class="callback_2"><a href="tel:+74957770885" class="tel_link">+7 (495) 777 08 85</a><a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a></p>
+			
+			<p><a href="#" class="orange_pill">Заказать звонок</a></p>
+
+			<p class="soclink_box soclink_box_2"><a href="#" class="soclink soclink_2"><i class="fab fa-instagram"></i><span>Мы в Instargam - красивые фото, акции, лайктаймы. Подписывайся!</span></a></p>
+
+		</div>
+		
+	</div>
 
 	<!-- /Header -->
 
@@ -267,13 +347,17 @@
 			<div class="right">
 				<div class="right_wrapp">
 					<h3>Оставайтесь на связи!</h3>
-					<div class="callback_from">
-						<form>
-							<input type="text" name="" placeholder="Ваш Email">
-							<button type="submit" class="submit_btn_2"><i class="fas fa-paper-plane"></i></button>
-						</form>
+					<div class="callback_from_wrapp">
+						<div class="callback_from">
+							<form>
+								<input type="text" name="" placeholder="Ваш Email">
+								<button type="submit" class="submit_btn_2"><i class="fas fa-paper-plane"></i></button>
+							</form>
+						</div>
+						<div class="p_wrapp">
+							<p>Подпишитесь на новости и будьте в курсе новостей, акций и эксклюзивных предложений!</p>
+						</div>
 					</div>
-					<p>Подпишитесь на новости и будьте в курсе новостей, акций и эксклюзивных предложений!</p>
 				</div>
 			</div>
 		</div>

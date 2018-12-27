@@ -2007,7 +2007,7 @@ textarea:focus {
     font-family: "Ubuntu";
     font-size: 12px;
     line-height: 33px;
-    color: #413c39;
+    color: #9e9d9c;
 }
 
 .dropdown_btn_2 {
@@ -2126,7 +2126,7 @@ textarea:focus {
     display: inline-table;
     vertical-align: top;
     width: 33.33%;
-    max-width: 194px;
+    max-width: 206px;
     margin: 1px 0 0 0;
     text-align: left;
 }
@@ -3035,23 +3035,23 @@ p.percents_minus {
     border-color: rgb(232, 230, 225);
     background-color: rgb(255, 255, 255);
     text-align: center;
-    -webkit-transition-property: box-shadow, padding, width, top, left, height;
+    -webkit-transition-property: box-shadow, width, top, left, height;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: box-shadow, padding, width, top, left, height;
+    -moz-transition-property: box-shadow, width, top, left, height;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: box-shadow, padding, width, top, left, height;
+    -ms-transition-property: box-shadow, width, top, left, height;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: box-shadow, padding, width, top, left, height;
+    -o-transition-property: box-shadow, width, top, left, height;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: box-shadow, padding, width, top, left, height;
+    transition-property: box-shadow, width, top, left, height;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
