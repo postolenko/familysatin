@@ -24,11 +24,14 @@ $(window).load(function() {
 
 	getFooterPosition();
 	showScrollTopBtn();
+
 	$(".dropdown_card_menu").addClass("properties");
 	$(".dropdown").addClass("properties");
-	$("[data-sllist]").css({
-		"display" : "none"
-	});
+
+    $("[data-sllist]").not(".active").css({
+                        "display" : "none"
+                    });
+
 	getAdaptivePositionElements();
 
 });
@@ -66,24 +69,30 @@ $(document).ready(function() {
 
 	$("[data-dropdownbtn]").on('click', function(e) {
 
-		e.preventDefault();		
+		e.preventDefault();
 
 		dropdownMenu = $("[data-dropdown = '"+ $(this).attr("data-dropdownbtn") + "']");
 
 		if( dropdownMenu.find(".card_item").length > 0 ) {
 
 			if(dropdownMenu.hasClass("active")) {
+
 				dropdownMenu.removeClass("active");
+                $(this).removeClass("active");
+
 				setTimeout(function() {
 					dropdownMenu.css({
 						"left" : -9999999 + "px"
 					});
 				}, 400);
+                
 
 			} else {
 				dropdownMenu.css({
 					"left" : 0
 				});
+
+                $(this).addClass("active");
 				dropdownMenu.addClass("active");
 			}
 
@@ -98,6 +107,7 @@ $(document).ready(function() {
             if ( $("[data-dropdown]").hasClass("active") ) {
 
                 $("[data-dropdown]").removeClass("active");
+                $("[data-dropdownbtn]").removeClass("active");
 				setTimeout(function() {
 					$("[data-dropdown]").css({
 						"left" : -9999999 + "px"
@@ -117,6 +127,8 @@ $(document).ready(function() {
 
             }
 
+            $("[data-dropdownbtn2], .select_input").removeClass("active");
+
         }
 
     });
@@ -130,6 +142,7 @@ $(document).ready(function() {
             && hide_element.has(e.target).length === 0) {
 
             $("[data-dropdown]").removeClass("active");
+            $("[data-dropdownbtn]").removeClass("active");
 			setTimeout(function() {
 				$("[data-dropdown]").css({
 					"left" : -9999999 + "px"
@@ -153,6 +166,7 @@ $(document).ready(function() {
 
 		if( parentBlock.closest(".dropdown_card_menu").find(".card_item").length == 1 ) {
 			parentBlock.closest(".dropdown_card_menu").removeClass("active");
+            $("[data-dropdownbtn]").removeClass("active");
 		}
 
 		setTimeout(function() {
@@ -179,6 +193,7 @@ $(document).ready(function() {
 
 		if(dropdownMenu.hasClass("active")) {
 			dropdownMenu.removeClass("active");
+            $(this).removeClass("active");
 			setTimeout(function() {
 				dropdownMenu.css({
 					"left" : -9999999 + "px"
@@ -189,6 +204,7 @@ $(document).ready(function() {
 			dropdownMenu.css({
 				"left" : 0
 			});
+            $(this).addClass("active");
 			dropdownMenu.addClass("active");
 		}
 
@@ -203,6 +219,7 @@ $(document).ready(function() {
             && hide_element.has(e.target).length === 0) {
 
             $("[data-dropdown2]").removeClass("active");
+            $("[data-dropdownbtn2], .select_input").removeClass("active");
 			setTimeout(function() {
 				$("[data-dropdown2]").css({
 					"left" : -9999999 + "px"
@@ -223,6 +240,8 @@ $(document).ready(function() {
 
 		var dropdownMenu = $(this).closest(".dropdown");
 		dropdownMenu.removeClass("active");
+        parentBlock.find("[data-dropdownbtn2]").removeClass("active");
+        parentBlock.find(".select_input").removeClass("active");
 		setTimeout(function() {
 			dropdownMenu.css({
 				"left" : -9999999 + "px"

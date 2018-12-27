@@ -150,17 +150,29 @@
 	    padding: 6px 10px;
 	}
 
-	.row_3_content {
-	    display: block;
+	.thumb_1 {
+		display: inline-block;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		text-align: center;
 	}
 
-	.row_3_content > .col:nth-child(1) {
+	.thumb_1 .col:nth-child(1) {
 		display: block;
-	    padding-right: 0;
+	    width: 60px;
+	}
+
+	.thumb_1 .col:nth-child(2) {
+		display: none;
+	}
+
+	.thumb_1 .col:nth-child(1) i {
+	    margin: 0 auto;
 	}
 
 	.row_3_content > .col:nth-child(2) {
-	    display: none;
+	    width: 190px;
 	}
 
 	/*-- /Header --*/
@@ -866,7 +878,7 @@
 	.filter_resp_nav {
 		display: block;
 		min-height: 100%;
-		padding: 12px 0;
+		padding: 12px 30px 12px 0;
 		background-color: #ffffff;
 		position: absolute;
 		top: -2px;
@@ -1008,6 +1020,10 @@
 	    margin-top: -15px;
 	}
 
+	.card_table .app_p {
+	    display: block;
+	}
+
 	/*-- /Section 1 - Card Page --*/
 
 	/*-- Footer --*/
@@ -1026,6 +1042,19 @@
 }
 
 @media only screen and (max-width: 670px) {
+
+	/*-- Header --*/
+
+	.row_3_content > .col:nth-child(1) {
+	    display: block;
+	    padding-right: 0;
+	}
+
+	.row_3_content > .col:nth-child(2) {
+	    display: none;
+	}
+
+	/*-- /Header --*/
 
 	/*-- Section 1 - Card Page --*/
 
@@ -1417,6 +1446,18 @@
 	}
 
 	/*-- /Footer --*/
+
+	/*-- Popup --*/
+
+	.popup {
+	    padding: 34px 15px 8px 15px;
+	}
+
+	.popup h2 {
+	    font-size: 24px;
+	}
+
+	/*-- /Popup --*/
 	
 }
 

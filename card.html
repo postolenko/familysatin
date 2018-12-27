@@ -52,8 +52,8 @@
 					</div>
 					<div class="inline">
 						<div class="append-elem"  data-append-desktop-elem = "1" data-min-screen = "750">
-							<!-- <a href="#" class="orange_pill">Вход</a> -->
-							<a href="#" class="orange_pill">Выход</a>
+							<a href="#" class="orange_pill show_popup" data-popup-name = "popup_2">Вход</a>
+							<!-- <a href="#" class="orange_pill">Выход</a> -->
 						</div>
 					</div>
 
@@ -78,7 +78,7 @@
 							</div>
 							<div class="col">
 								<p><a href="tel:+74957770885">+7 (495) 777 08 85</a></p>
-								<p><a href="#" class="orange_pill">Заказать звонок</a></p>
+								<p><a href="#" class="orange_pill show_popup" data-popup-name = "popup_1">Заказать звонок</a></p>
 							</div>
 						</div>
 						<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>
@@ -186,7 +186,7 @@
 					<div class="col">
 						<div class="overflow_wrapp">
 							<div class="thumbnails_1 offset-ziro">
-								<div class="thumb_1">
+								<a href="#" class="thumb_1">
 									<div class="col">
 										<div class="icon_box">
 											<div class="inner">
@@ -197,8 +197,8 @@
 									<div class="col">
 										<p>Только высокое качество текстиля</p>
 									</div>
-								</div>
-								<div class="thumb_1">
+								</a>
+								<a href="#" class="thumb_1">
 									<div class="col">
 										<div class="icon_box">
 											<div class="inner">
@@ -207,10 +207,10 @@
 										</div>
 									</div>
 									<div class="col">
-										<p>Бесплатная доставка до двери</p>
+										<p>Бесплатная<br /> доставка до двери</p>
 									</div>
-								</div>
-								<div class="thumb_1">
+								</a>
+								<a href="#" class="thumb_1">
 									<div class="col">
 										<div class="icon_box">
 											<div class="inner">
@@ -221,7 +221,7 @@
 									<div class="col">
 										<p>Лучшие бренды по самым низким ценам</p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -379,11 +379,11 @@
 										</div>
 										<div class="table-cell">
 											<div class="append-elem"  data-append-desktop-elem = "5" data-min-screen = "750">
-												<p><span class="price_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
+												<p><span class="price_val">5500</span> <i class="ruble_4"></i></p>
 											</div>
 										</div>
 										<div class="table-cell">
-											<p><span class="price_total_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
+											<p><span class="price_total_val">5500</span> <i class="ruble_4"></i></p>
 											<button type="button" class="close_btn"></button>
 										</div>
 									</div>
@@ -423,11 +423,11 @@
 										</div>
 										<div class="table-cell">
 											<div class="append-elem"  data-append-desktop-elem = "7" data-min-screen = "750">
-												<p><span class="price_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
+												<p><span class="price_val">5500</span> <i class="ruble_4"></i></p>
 											</div>
 										</div>
 										<div class="table-cell">
-											<p><span class="price_total_val">5500</span> <i class="fas fa-ruble-sign"></i></p>
+											<p><span class="price_total_val">5500</span> <i class="ruble_4"></i></p>
 											<button type="button" class="close_btn"></button>
 										</div>
 									</div>
@@ -456,7 +456,7 @@
 												<p>Скидка по купону:</p>
 											</div>
 											<div class="cell">
-												<p>-1000 <i class="fas fa-ruble-sign"></i></p>
+												<p>-1000 <i class="ruble_3"></i></p>
 											</div>
 										</div>
 										<div class="table-row total">
@@ -464,7 +464,7 @@
 												<p>Общая стоимость:</p>
 											</div>
 											<div class="cell">
-												<p>12000 <i class="fas fa-ruble-sign"></i></p>
+												<p>12000 <i class="ruble_2"></i></p>
 											</div>
 										</div>
 									</div>
@@ -527,7 +527,7 @@
 							<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>
 						</div>
 						<div>
-							<a href="#" class="brown_pill_2">Заказать звонок</a>
+							<a href="#" class="brown_pill_2 show_popup" data-popup-name = "popup_1">Заказать звонок</a>
 						</div>
 					</div>
 					<p>пн-сб 9:00 - 20:00</p>
@@ -577,6 +577,97 @@
 	<!-- /Scroll Top -->
 
 	<!-- /Footer -->
+
+		<!-- Popup -->
+
+	<div class="popup_wrapp" data-popup ="popup_1">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup popup_2">
+				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
+				<div class="popup_inner">
+					<form>
+						<h2>Заказать звонок</h2>
+						<forn>
+							<div class="inputs_wrapp">
+								<div class="input_wrapp_2">
+									<i class="fas fa-user-circle"></i>
+	                   				<input type="text" name="" placeholder="Ваше имя">
+	                   			</div>
+	                   			<div class="input_wrapp_2">
+									<i class="fas fa-envelope-open"></i>
+	                   				<input type="email" name="" placeholder="Ваш телефон">
+	                   			</div>
+	                   		</div>
+	               			<div class="submit_box_2">
+	               				<button type="submit" class="brown_pill">Отправить</button>
+	               			</div>
+	               		</forn>
+	       			</form>
+	       		</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_wrapp" data-popup ="popup_2">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup">
+				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
+				<div class="popup_inner">
+					<form>
+						<h2>Вход</h2>
+						<forn>
+							<div class="inputs_wrapp">
+								<div class="input_wrapp_2">
+									<i class="fas fa-envelope-open"></i>
+	                   				<input type="email" name="" placeholder="Ваш Email">
+	                   			</div>
+	                   			<div class="input_wrapp_2">
+	                   				<i class="fas fa-lock"></i>
+	                   				<input type="password" name="" placeholder="Пароль">
+	                   			</div>
+	                   		</div>
+	               			<div class="submit_box_2">
+	               				<button type="submit" class="brown_pill">Зарегистрироваться</button>
+	               			</div>
+	               		</forn>
+	           			<p class="p-line"><span>или</span></p>
+	           			<div class="soc_wrapp">
+		           			<ul class="soc_list">
+		           				<li>
+		           					<a href="#">
+		           						<i class="vk"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="fb"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="tw"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="od"></i>
+		           					</a>
+		           				</li>
+		           			</ul>
+		           		</div>
+	       			</form>
+	       			<div class="links_wrapp">
+	       				<p><a href="#">Забыли логин или пароль?</a></p>
+	       				<p class="up_link"><a href="#">Регистрация</a><i class="fas fa-angle-right"></i></p>
+	       			</div>
+	       		</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popup -->
 
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>

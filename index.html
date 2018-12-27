@@ -52,8 +52,8 @@
 					</div>
 					<div class="inline">
 						<div class="append-elem"  data-append-desktop-elem = "1" data-min-screen = "750">
-							<!-- <a href="#" class="orange_pill">Вход</a> -->
-							<a href="#" class="orange_pill">Выход</a>
+							<a href="#" class="orange_pill show_popup" data-popup-name = "popup_2">Вход</a>
+							<!-- <a href="#" class="orange_pill">Выход</a> -->
 						</div>
 					</div>
 
@@ -78,7 +78,7 @@
 							</div>
 							<div class="col">
 								<p><a href="tel:+74957770885">+7 (495) 777 08 85</a></p>
-								<p><a href="#" class="orange_pill">Заказать звонок</a></p>
+								<p><a href="#" class="orange_pill show_popup" data-popup-name = "popup_1">Заказать звонок</a></p>
 							</div>
 						</div>
 						<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>
@@ -351,83 +351,173 @@
 									<div class="dropdown_box">
 										<button type="button" class="slide_btn" data-slbtn = "sl1"><i class="fas fa-minus"></i></button>
 										<a href="#" class="dropdown_title">Постельное белье</a>
-										<div class="dropdowm_list" data-sllist = "sl1">
+										<div class="dropdowm_list active" data-sllist = "sl1">
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl2"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Полуторное</a>
 												<div class="dropdowm_list" data-sllist = "sl2">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1" />
+															<label for="ch_1"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2" />
+															<label for="ch_2"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3" />
+															<label for="ch_3"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4" />
+															<label for="ch_4"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5" />
+															<label for="ch_5"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl3"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Двуспальное</a>
 												<div class="dropdowm_list" data-sllist = "sl3">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_2" />
+															<label for="ch_1_2"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_2" />
+															<label for="ch_2_2"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_2" />
+															<label for="ch_3_2"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_2" />
+															<label for="ch_4_2"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_2" />
+															<label for="ch_5_2"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl4"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Евро</a>
 												<div class="dropdowm_list" data-sllist = "sl4">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_3" />
+															<label for="ch_1_3"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_3" />
+															<label for="ch_2_3"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_3" />
+															<label for="ch_3_3"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_3" />
+															<label for="ch_4_3"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_3" />
+															<label for="ch_5_3"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl5"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Семейное</a>
-												<div class="dropdowm_list" data-sllist = "sl5">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+												<div class="dropdowm_list active" data-sllist = "sl5">
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_4" checked />
+															<label for="ch_1_4"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_4" />
+															<label for="ch_2_4"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_4" />
+															<label for="ch_3_4"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_4" />
+															<label for="ch_4_4"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_4" />
+															<label for="ch_5_4"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl6"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Детское</a>
 												<div class="dropdowm_list" data-sllist = "sl6">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_5" />
+															<label for="ch_1_5"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_5" />
+															<label for="ch_2_5"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_5" />
+															<label for="ch_3_5"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_5" />
+															<label for="ch_4_5"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_5" />
+															<label for="ch_5_5"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl7"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">производитель</a>
 												<div class="dropdowm_list" data-sllist = "sl7">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_6" />
+															<label for="ch_1_6"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_6" />
+															<label for="ch_2_6"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_6" />
+															<label for="ch_3_6"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_6" />
+															<label for="ch_4_6"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_6" />
+															<label for="ch_5_6"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -442,78 +532,168 @@
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl9"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Полуторное</a>
 												<div class="dropdowm_list" data-sllist = "sl9">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_7" />
+															<label for="ch_1_7"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_7" />
+															<label for="ch_2_7"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_7" />
+															<label for="ch_3_7"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_7" />
+															<label for="ch_4_7"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_7" />
+															<label for="ch_5_7"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl10"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Двуспальное</a>
 												<div class="dropdowm_list" data-sllist = "sl10">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_8" />
+															<label for="ch_1_8"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_8" />
+															<label for="ch_2_8"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_8" />
+															<label for="ch_3_8"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_8" />
+															<label for="ch_4_8"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_8" />
+															<label for="ch_5_8"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl11"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Евро</a>
 												<div class="dropdowm_list" data-sllist = "sl11">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_9" />
+															<label for="ch_1_9"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_9" />
+															<label for="ch_2_9"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_9" />
+															<label for="ch_3_9"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_9" />
+															<label for="ch_4_9"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_9" />
+															<label for="ch_5_9"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl12"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Семейное</a>
 												<div class="dropdowm_list" data-sllist = "sl12">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_10" />
+															<label for="ch_1_10"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_10" />
+															<label for="ch_2_10"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_10" />
+															<label for="ch_3_10"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_10" />
+															<label for="ch_4_10"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_10" />
+															<label for="ch_5_10"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl13"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Детское</a>
 												<div class="dropdowm_list" data-sllist = "sl13">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_11" />
+															<label for="ch_1_11"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_11" />
+															<label for="ch_2_11"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_11" />
+															<label for="ch_3_11"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_11" />
+															<label for="ch_4_11"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_11" />
+															<label for="ch_5_11"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl14"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">производитель</a>
 												<div class="dropdowm_list" data-sllist = "sl14">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_12" />
+															<label for="ch_1_12"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_12" />
+															<label for="ch_2_12"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_12" />
+															<label for="ch_3_12"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_12" />
+															<label for="ch_4_12"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_12" />
+															<label for="ch_5_12"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -528,78 +708,168 @@
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl16"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Полуторное</a>
 												<div class="dropdowm_list" data-sllist = "sl16">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_13" />
+															<label for="ch_1_13"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_13" />
+															<label for="ch_2_13"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_13" />
+															<label for="ch_3_13"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_13" />
+															<label for="ch_4_13"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_13" />
+															<label for="ch_5_13"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl17"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Двуспальное</a>
 												<div class="dropdowm_list" data-sllist = "sl17">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_14" />
+															<label for="ch_1_14"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_14" />
+															<label for="ch_2_14"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_14" />
+															<label for="ch_3_14"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_14" />
+															<label for="ch_4_14"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_14" />
+															<label for="ch_5_14"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl18"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Евро</a>
 												<div class="dropdowm_list" data-sllist = "sl18">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_15" />
+															<label for="ch_1_15"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_15" />
+															<label for="ch_2_15"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_15" />
+															<label for="ch_3_15"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_15" />
+															<label for="ch_4_15"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_15" />
+															<label for="ch_5_15"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl19"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Семейное</a>
 												<div class="dropdowm_list" data-sllist = "sl19">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_16" />
+															<label for="ch_1_16"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_16" />
+															<label for="ch_2_16"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_16" />
+															<label for="ch_3_16"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_16" />
+															<label for="ch_4_16"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_16" />
+															<label for="ch_5_16"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl20"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">Детское</a>
 												<div class="dropdowm_list" data-sllist = "sl20">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_17" />
+															<label for="ch_1_17"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_17" />
+															<label for="ch_2_17"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_17" />
+															<label for="ch_3_17"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_17" />
+															<label for="ch_4_17"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_17" />
+															<label for="ch_5_17"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="item dropdown_item">
 												<button type="button" class="slide_btn slide_btn_2" data-slbtn = "sl21"><i class="fas fa-minus-circle"></i><i class="fas fa-plus-circle"></i></button>
 												<a href="#" class="dropdown_title">производитель</a>
 												<div class="dropdowm_list" data-sllist = "sl21">
-													<ul class="items">
-														<li><a href="#" class="active"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></a></li>
-														<li><a href="#"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></a></li>
-													</ul>
+													<div class="items">
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_1_18" />
+															<label for="ch_1_18"><i class="fas fa-angle-right"></i>сатин<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_2_18" />
+															<label for="ch_2_18"><i class="fas fa-angle-right"></i>жаккард<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_3_18" />
+															<label for="ch_3_18"><i class="fas fa-angle-right"></i>сатин однотонный<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_4_18" />
+															<label for="ch_4_18"><i class="fas fa-angle-right"></i>тенсел<i class="fas fa-check"></i></label>
+														</div>
+														<div class="checkbox">
+															<input type="checkbox" name="checkboxes_1" id="ch_5_18" />
+															<label for="ch_5_18"><i class="fas fa-angle-right"></i>люкс-сатин<i class="fas fa-check"></i></label>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -621,12 +891,24 @@
 								<div class="catalog_header clearfix">
 									<div class="col filter_resp_nav">
 										<div class="overflow_wrapp">
-											<ul class="filter_list">
-												<li><a href="#" >Полуторное</a></li>
-												<li><a href="#" >Двуспальное</a></li>
-												<li><a href="#" >Евро</a></li>
-												<li><a href="#" class="active">Семейное</a></li>
-											</ul>
+											<div class="filter_list">
+												<div class="checkbox_2">
+													<input type="checkbox" name="checkboxes_2" id="filter_ch_1" />
+													<label for="filter_ch_1">Полуторное</label>
+												</div>
+												<div class="checkbox_2">
+													<input type="checkbox" name="checkboxes_2" id="filter_ch_2" />
+													<label for="filter_ch_2">Двуспальное</label>
+												</div>
+												<div class="checkbox_2">
+													<input type="checkbox" name="checkboxes_2" id="filter_ch_3" />
+													<label for="filter_ch_3">Евро</label>
+												</div>
+												<div class="checkbox_2">
+													<input type="checkbox" name="checkboxes_2" id="filter_ch_4" checked />
+													<label for="filter_ch_4">Семейное</label>
+												</div>
+											</div>
 										</div>
 										<button type="button" class="close_btn"></button>
 									</div>
@@ -1529,7 +1811,7 @@
 							<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>
 						</div>
 						<div>
-							<a href="#" class="brown_pill_2">Заказать звонок</a>
+							<a href="#" class="brown_pill_2 show_popup" data-popup-name = "popup_1">Заказать звонок</a>
 						</div>
 					</div>
 					<p>пн-сб 9:00 - 20:00</p>
@@ -1579,6 +1861,97 @@
 	</div>
 
 	<!-- /Scroll Top -->
+
+	<!-- Popup -->
+
+	<div class="popup_wrapp" data-popup ="popup_1">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup popup_2">
+				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
+				<div class="popup_inner">
+					<form>
+						<h2>Заказать звонок</h2>
+						<forn>
+							<div class="inputs_wrapp">
+								<div class="input_wrapp_2">
+									<i class="fas fa-user-circle"></i>
+	                   				<input type="text" name="" placeholder="Ваше имя">
+	                   			</div>
+	                   			<div class="input_wrapp_2">
+									<i class="fas fa-envelope-open"></i>
+	                   				<input type="email" name="" placeholder="Ваш телефон">
+	                   			</div>
+	                   		</div>
+	               			<div class="submit_box_2">
+	               				<button type="submit" class="brown_pill">Отправить</button>
+	               			</div>
+	               		</forn>
+	       			</form>
+	       		</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_wrapp" data-popup ="popup_2">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup">
+				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
+				<div class="popup_inner">
+					<form>
+						<h2>Вход</h2>
+						<forn>
+							<div class="inputs_wrapp">
+								<div class="input_wrapp_2">
+									<i class="fas fa-envelope-open"></i>
+	                   				<input type="email" name="" placeholder="Ваш Email">
+	                   			</div>
+	                   			<div class="input_wrapp_2">
+	                   				<i class="fas fa-lock"></i>
+	                   				<input type="password" name="" placeholder="Пароль">
+	                   			</div>
+	                   		</div>
+	               			<div class="submit_box_2">
+	               				<button type="submit" class="brown_pill">Зарегистрироваться</button>
+	               			</div>
+	               		</forn>
+	           			<p class="p-line"><span>или</span></p>
+	           			<div class="soc_wrapp">
+		           			<ul class="soc_list">
+		           				<li>
+		           					<a href="#">
+		           						<i class="vk"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="fb"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="tw"></i>
+		           					</a>
+		           				</li>
+		           				<li>
+		           					<a href="#">
+		           						<i class="od"></i>
+		           					</a>
+		           				</li>
+		           			</ul>
+		           		</div>
+	       			</form>
+	       			<div class="links_wrapp">
+	       				<p><a href="#">Забыли логин или пароль?</a></p>
+	       				<p class="up_link"><a href="#">Регистрация</a><i class="fas fa-angle-right"></i></p>
+	       			</div>
+	       		</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popup -->
 
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>
