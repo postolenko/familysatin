@@ -572,6 +572,26 @@ textarea:focus {
     background-size: contain;
 }
 
+.hearth_4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 34px;
+    height: 28px;
+    background-image: url(img/hearth_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card_4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 35px;
+    height: 29px;
+    background-image: url(img/card_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*-- /Icons --*/
 
 /*-- Slick --*/
@@ -3182,23 +3202,23 @@ p.percents_minus {
     border-color: rgb(232, 230, 225);
     background-color: rgb(255, 255, 255);
     text-align: center;
-    -webkit-transition-property: box-shadow, width, top, left, height;
+    -webkit-transition-property: box-shadow, width, top, left, height, padding;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: box-shadow, width, top, left, height;
+    -moz-transition-property: box-shadow, width, top, left, height, padding;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: box-shadow, width, top, left, height;
+    -ms-transition-property: box-shadow, width, top, left, height, padding;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: box-shadow, width, top, left, height;
+    -o-transition-property: box-shadow, width, top, left, height, padding;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: box-shadow, width, top, left, height;
+    transition-property: box-shadow, width, top, left, height, padding;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
@@ -4774,6 +4794,493 @@ p.percents_minus {
 }
 
 /*-- /Section 1 - Order Page --*/
+
+/*-- Section 1 - Good Page --*/
+
+.good-templ {
+    margin-bottom: 21px;
+}
+
+.good-templ .left {
+    width: 50%;
+    padding: 32px 15px 32px 0;
+}
+
+.good-templ .right {
+    width: 50%;
+    padding: 32px 0 32px 15px;
+}
+
+.big-slider_wrapp {
+
+}
+
+.big-slider {
+
+}
+
+.big-slider .slick-prev {
+    left: 18px;
+}
+
+.big-slider .slick-next {
+    right: 18px;
+}
+
+.big-slider .slide {
+
+}
+
+.big-slider .img-box {
+    height: 536px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(39, 34, 32);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.miniature-slider {
+    margin: 3px 0;
+}
+
+.miniature-slider .slide {
+    padding: 4px;
+}
+
+.miniature-slider .img-box {
+    cursor: pointer;
+    height: 106px;
+    /*width: 118px;*/
+    width: auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(39, 34, 32);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.miniature-slider .slick-current .img-box {
+    border-color: rgb(247, 185, 18);
+}
+
+.good-info_sect {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(232, 230, 225);
+    background-color: rgb(255, 255, 255);
+}
+
+.good-info_sect .inner-row {
+    border-bottom: 1px solid #e8e6e1;
+    padding: 11px 30px;
+}
+
+.good-info_sect .inner-row:last-child {
+    border-bottom: transparent;
+}
+
+.goot-info-header {
+    display: table;
+    width: 100%;
+}
+
+.goot-info-header .col:nth-child(1) {
+    display: table-cell;
+    vertical-align: baseline;
+    width: 40%;
+    padding: 10px 1% 10px 0;
+}
+
+.goot-info-header .col:nth-child(2) {
+    display: table-cell;
+    vertical-align: baseline;
+    width: 60%;
+    padding: 10px 0 10px 1%;
+}
+
+.goot-info-header .total_result {
+    margin: 0;
+}
+
+.old-price_p {
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    color: #907d6f;
+}
+
+.old-price {
+    position: relative;
+}
+
+.old-price:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #907d6f;
+}
+
+.goot-info-header .total_result .total .cell:nth-child(1) p {
+    font-size: 14px;
+}
+
+.goot-info-header .total_result .total .cell:nth-child(2) p {
+    font-size: 36px;
+}
+
+.goot-info-header .ruble_2 {
+    width: 18px;
+    height: 27px;
+}
+
+.inner-row_2 {
+    /*border-bottom: 1px solid #e8e6e1;*/
+    padding-bottom: 33px;
+}
+
+.tabs_3 {
+    margin: 0;
+}
+
+.tabs-links_wrapp {
+    padding: 20px 30px 3px 30px;
+}
+
+.tabs-links_2 {
+    display: table;
+    width: 100%;
+    border-bottom: 3px solid #e8e6e1;
+}
+
+.tabs-links_2 .tab-link {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    padding: 14px 2%;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    color: rgb(39, 34, 32);
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+}
+
+.tabs-links_2 .tab-link.active {
+    color: #907d6f;
+}
+
+.tabs-links_2 .tab-link:before {
+    display: none;
+}
+
+.tabs-links_2 .tab-link:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: transparent;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.tabs-links_2 .tab-link.active:after {
+    background-color: #f7b912;
+}
+
+.good_table {
+    display: table;
+    width: 100%;
+}
+
+.good_table .table-row {
+    display: table-row;
+    cursor: pointer;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.good_table .table-row:hover {
+    background-color: #fdf1d0;
+}
+
+.good_table .table-row .cell {
+    display: table-cell;
+    vertical-align: top;
+    padding: 13px 5px;
+}
+
+.good_table .table-row:nth-child(1) .cell {
+    padding-bottom: 7px;
+}
+
+.good_table h3 {
+    font-size: 12px;
+    line-height: 13px;
+    font-family: "Ubuntu";
+    color: rgb(156, 154, 153);
+}
+
+.good_table p {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 15px;    
+    color: rgb(39, 34, 32);
+}
+
+.good_table .table-row .cell:nth-child(1) {
+    width: auto;
+    min-width: 160px;
+    padding-top: 14px;
+    padding-left: 30px;
+}
+
+.good_table .table-row .cell:nth-child(2) {
+    width: 16%;
+}
+
+.good_table .table-row .cell:nth-child(3) {
+    width: 22%;
+}
+
+.good_table .table-row .cell:nth-child(4) {
+    width: 17%;
+}
+
+.good_table .table-row .cell:nth-child(5) {
+    width: 30%;
+}
+
+.three-cols {
+    display: table;
+    width: 100%;
+}
+
+.good-info_sect .three-cols {
+    padding: 0 24px;
+}
+
+.three-cols .col {
+    display: table-cell;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 0 6px;
+}
+
+.dropdown_sect h3 {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(144, 125, 111);  
+}
+
+.dropdowm_select_menu_3 {
+    margin: 6px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(232, 230, 225);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.dropdowm_select_menu_3 .select_input {
+    color: #272220;
+}
+
+.inner-row_3 {
+    border-top: 1px solid #e8e6e1;
+    padding: 24px 30px 24px 30px;
+}
+
+.two-cols_4 {
+    display: table;
+    width: 100%;
+}
+
+.two-cols_4 .col {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+
+.two-cols_4 .col:nth-child(1) {
+    padding: 5px 5px 5px 0;
+}
+
+.two-cols_4 .col:nth-child(2) {
+    padding: 5px 0 5px 5px;
+}
+
+.two-cols_4 .transparent_pill,
+.two-cols_4 .brown_pill {
+    margin: 10px 0;
+}
+
+.pill_3 {
+    display: block;
+    position: relative;
+    padding: 14px 10px 14px 26px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.pill_3 i {
+    position: absolute;
+    top: 9px;
+    left: 9%;
+}
+
+.brown_pill.pill_3 {
+    padding: 15px 10px 15px 26px;
+}
+
+.yellow_box {
+    background-color: rgb(247, 185, 18);
+    padding: 28px 30px;
+}
+
+.yellow_box p {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.black_link {
+    display: inline;
+    border-bottom: 1px dotted #272220;
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.black_link:link,
+.black_link:visited {
+    border-bottom: 1px dotted #272220;
+}
+
+.black_link:active,
+.black_link.active {
+    border-bottom: 1px dotted transparent;
+}
+
+.black_link:hover {
+    border-bottom: 1px dotted transparent;
+}
+
+.yellow_box p .black_link {
+    margin-left: 2%;
+}
+
+.good-info_sect .thumbnails_1 {
+    margin-top: 25px;
+    margin-bottom: 26px;
+}
+
+/*-- /Section 1 - Good Page --*/
+
+/*-- Section 2 - Good Page --*/
+
+.sect_5_2 {
+    border-top: 1px solid #e8e6e1;
+    padding: 34px 0 4px 0;
+}
+
+/*-- /Section 2 - Good Page --*/
+
+
+
+
+
 
 
 /*-------------------------------------------*/
