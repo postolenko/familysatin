@@ -183,17 +183,21 @@ $(document).ready(function() {
 
 	$("[data-dropdownbtn2], .select_input").on('click', function(e) {
 
-        // $(".dropdowm_select_menu .select_input").removeClass("active");        
-        // $(".dropdown_btn_2").removeClass("active");
-        // $("[data-dropdown2]").removeClass("active");
-        // $("[data-dropdown2]").css({
-        //             "left" : -9999999 + "px"
-        //         });
+        e.preventDefault();
+
+        $(".dropdowm_select_menu .select_input").removeClass("active");        
+        $(".dropdown_btn_2").removeClass("active");
+        $("[data-dropdown2]").removeClass("active");
+        $("[data-dropdown2]").css({
+                    "left" : -9999999 + "px"
+                });
+
+        console.log("");
 
         var dropdownMenuName;
         var dropdownMenu;
 
-		e.preventDefault();
+		
 
         // $(".dropdowm_select_menu .select_input").each(function(){
         //     // if($(this).hasClass("active")) {

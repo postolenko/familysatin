@@ -589,6 +589,28 @@ ol li .fa-angle-right {
     background-size: contain;
 }
 
+.ruble_4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 8px;
+    height: 11px;
+    background-image: url(img/ruble_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ruble_5 {
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 12px;
+    background-image: url(img/ruble_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .hearth_4 {
     display: inline-block;
     vertical-align: top;
@@ -3815,6 +3837,10 @@ p.percents_minus {
     margin-top: -26px;
 }
 
+.goods_slider .slick-track {
+    min-width: 100% !important;
+}
+
 /*-- /Section 5 - Main Page --*/
 
 /*-- Section 6 - Main Page --*/
@@ -4046,17 +4072,6 @@ p.percents_minus {
 
 .card_table p.grey-p {
     color: #9c9a99;
-}
-
-.ruble_4 {
-    display: inline-block;
-    vertical-align: top;
-    width: 8px;
-    height: 11px;
-    background-image: url(img/ruble_3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .price_val,
@@ -4961,17 +4976,25 @@ p.percents_minus {
 }
 
 .old-price {
+    padding: 0 3px;
     position: relative;
+    font-size: 18px;
 }
 
 .old-price:before {
     content: "";
     width: 100%;
     height: 1px;
+    margin-top: 1px;
     position: absolute;
     top: 50%;
     left: 0;
     background-color: #907d6f;
+}
+
+.old-price .ruble_5 {
+    position: relative;
+    top: 7px;
 }
 
 .good-total-price p {
@@ -5006,7 +5029,7 @@ p.total-price .ruble_2 {
 .tabs-links_4 {
     display: table;
     width: 100%;
-    margin: 0;
+    margin: 1px 0;
     border-bottom: 3px solid #e8e6e1;
 }
 
