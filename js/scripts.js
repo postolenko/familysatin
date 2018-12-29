@@ -34,6 +34,12 @@ $(window).load(function() {
 
 	getAdaptivePositionElements();
 
+    $("ol li").each(function() {
+
+        $(this).prepend("<i class='fas fa-angle-right'></i>");
+
+    });
+
 });
 
 $(window).resize(function() {
@@ -505,6 +511,50 @@ $(document).ready(function() {
                 $("#resp_sidebar").fadeOut(300);
 
         }
+
+    });
+
+    // ----------------
+
+    $("[data-slideboxbtn]").on("click", function(e) {
+
+        e.preventDefault();
+
+        var slName = $(this).attr("data-slideboxbtn");
+
+        var slideBox = $("[data-slidebox = '"+ slName +"']");
+
+        var respHeight = parseInt( slideBox.attr("data-respheigth") );
+        var fullHeight = slideBox.find(".inner_wrapp").height();
+
+        if( slideBox.hasClass("active") ) {
+
+            slideBox.animate({
+                "height" : respHeight + "px"
+            }, 300);
+
+            $(this).removeClass("active");
+            slideBox.removeClass("active");
+
+        } else {
+
+            slideBox.animate({
+                "height" : fullHeight + "px"
+            }, 300);
+
+            setTimeout(function() {
+
+                slideBox.css({
+                    "height" : "auto"
+                });
+
+            }, 400);
+            $(this).addClass("active");
+            slideBox.addClass("active");
+
+        }
+
+        console.log(slName);
 
     });
 

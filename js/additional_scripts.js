@@ -175,16 +175,9 @@ $(document).ready(function() {
         focusOnSelect: true,
         responsive: [
 		    {
-		      breakpoint: 1120,
+		      breakpoint: 980,
 		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 1
-		      }
-		    },
-		    {
-		      breakpoint: 750,
-		      settings: {
-		        slidesToShow: 2,
+		        slidesToShow: 4,
 		        slidesToScroll: 1
 		      }
 		    },

@@ -361,6 +361,23 @@ textarea:focus {
     border-color: #f7b912;
 }
 
+ol li {
+    position: relative;
+    padding: 5px 0 5px 13px;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 19px;
+    color: #272220;    
+}
+
+ol li .fa-angle-right {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 13px;
+    color: #ea9841;
+}
+
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -4802,12 +4819,12 @@ p.percents_minus {
 }
 
 .good-templ .left {
-    width: 50%;
+    width: 45%;
     padding: 32px 15px 32px 0;
 }
 
 .good-templ .right {
-    width: 50%;
+    width: 55%;
     padding: 32px 0 32px 15px;
 }
 
@@ -4899,37 +4916,43 @@ p.percents_minus {
 
 .good-info_sect .inner-row {
     border-bottom: 1px solid #e8e6e1;
-    padding: 11px 30px;
+    padding: 22px 30px;
 }
 
 .good-info_sect .inner-row:last-child {
     border-bottom: transparent;
 }
 
-.goot-info-header {
+.good-info-header {
     display: table;
     width: 100%;
 }
 
-.goot-info-header .col:nth-child(1) {
+.good-info-header > .col:nth-child(1) {
     display: table-cell;
     vertical-align: baseline;
-    width: 40%;
+    width: 45%;
     padding: 10px 1% 10px 0;
 }
 
-.goot-info-header .col:nth-child(2) {
+.good-info-header > .col:nth-child(2) {
     display: table-cell;
     vertical-align: baseline;
-    width: 60%;
+    width: 55%;
     padding: 10px 0 10px 1%;
+    text-align: right;
 }
 
-.goot-info-header .total_result {
-    margin: 0;
+.good-info-header > .col > div {
+    display: inline-block;
+    vertical-align: baseline;
 }
 
-.old-price_p {
+.good-info-header > .col > div:nth-child(2) {
+    padding-left: 10px;
+}
+
+.good-info-header p {
     display: inline-block;
     vertical-align: baseline;
     font-family: "Ubuntu";
@@ -4951,21 +4974,24 @@ p.percents_minus {
     background-color: #907d6f;
 }
 
-.goot-info-header .total_result .total .cell:nth-child(1) p {
-    font-size: 14px;
+.good-total-price p {
+    color: #272220;
 }
 
-.goot-info-header .total_result .total .cell:nth-child(2) p {
+p.total-price {
+    font-family: "Lora";
     font-size: 36px;
+    line-height: 40px;
 }
 
-.goot-info-header .ruble_2 {
+p.total-price .ruble_2 {
     width: 18px;
     height: 27px;
+    position: relative;
+    top: 5px;
 }
 
 .inner-row_2 {
-    /*border-bottom: 1px solid #e8e6e1;*/
     padding-bottom: 33px;
 }
 
@@ -4977,13 +5003,14 @@ p.percents_minus {
     padding: 20px 30px 3px 30px;
 }
 
-.tabs-links_2 {
+.tabs-links_4 {
     display: table;
     width: 100%;
+    margin: 0;
     border-bottom: 3px solid #e8e6e1;
 }
 
-.tabs-links_2 .tab-link {
+.tabs-links_4 .tab-link {
     display: table-cell;
     vertical-align: top;
     position: relative;
@@ -4997,15 +5024,15 @@ p.percents_minus {
     text-align: center;
 }
 
-.tabs-links_2 .tab-link.active {
+.tabs-links_4 .tab-link.active {
     color: #907d6f;
 }
 
-.tabs-links_2 .tab-link:before {
+.tabs-links_4 .tab-link:before {
     display: none;
 }
 
-.tabs-links_2 .tab-link:after {
+.tabs-links_4 .tab-link:after {
     content: "";
     width: 100%;
     height: 3px;
@@ -5034,7 +5061,7 @@ p.percents_minus {
     transition-timing-function: ease;
 }
 
-.tabs-links_2 .tab-link.active:after {
+.tabs-links_4 .tab-link.active:after {
     background-color: #f7b912;
 }
 
@@ -5118,6 +5145,41 @@ p.percents_minus {
     width: 30%;
 }
 
+.good_table .resp_h {
+    display: none;
+}
+
+.slBtnWrapp {
+    padding: 30px 30px 0 30px;
+}
+
+.slideBtn {
+    min-width: 100%;
+    padding: 9px 10px;
+    font-size: 14px;
+}
+
+.slBtnWrapp .slideBtn {
+    width: 100%;
+    margin: 0;
+}
+
+.slideBtn .hidetxt {
+    display: none;
+}
+
+.slideBtn.active .hidetxt {
+    display: block;
+}
+
+.slideBtn .showtxt {
+    display: block;
+}
+
+.slideBtn.active .showtxt {
+    display: none;
+}
+
 .three-cols {
     display: table;
     width: 100%;
@@ -5181,13 +5243,14 @@ p.percents_minus {
 
 .two-cols_4 .transparent_pill,
 .two-cols_4 .brown_pill {
+    min-width: 100%;
     margin: 10px 0;
 }
 
 .pill_3 {
     display: block;
     position: relative;
-    padding: 14px 10px 14px 26px;
+    padding: 14px 10px 14px 26px !important;
     font-size: 15px;
     line-height: 18px;
     font-weight: 500;
@@ -5264,6 +5327,53 @@ p.percents_minus {
 .good-info_sect .thumbnails_1 {
     margin-top: 25px;
     margin-bottom: 26px;
+}
+
+.tab_inner {
+    padding: 9px 30px;
+}
+
+.description_good {
+
+}
+
+.articlum {
+    display: table;
+    width: 100%;
+}
+
+.articlum .col:nth-child(1) {
+    display: table-cell;
+    vertical-align: baseline;
+    width: 72px;
+}
+
+.articlum .col:nth-child(2) {
+    display: table-cell;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.articlum p {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 24px;
+    color: #272220;
+}
+
+.articlum p.grey-p {
+    color: #9c9a99;
+}
+
+.text_box {
+    margin: 15px 0;
+}
+
+.text_box p {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 24px;
+    color: #272220;
 }
 
 /*-- /Section 1 - Good Page --*/
