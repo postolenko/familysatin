@@ -260,6 +260,10 @@
 		background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
 	}
 
+	.slBtnWrapp {
+		display: block !important;
+	}
+
 	/*-- /Section 1 - Good Page --*/
 
 }
@@ -1889,6 +1893,14 @@
 
 	#resp_sidebar {
 		display: block !important;
+	}
+
+}
+
+@media only screen and (min-width: 1125px) {
+
+	.good_table_wrapp {
+		height: auto !important;
 	}
 
 }
