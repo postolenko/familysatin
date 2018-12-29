@@ -182,9 +182,9 @@ $(document).ready(function() {
 		      }
 		    },
 		    {
-		      breakpoint: 430,
+		      breakpoint: 750,
 		      settings: {
-		        slidesToShow: 1,
+		        slidesToShow: 5,
 		        slidesToScroll: 1
 		      }
 		    }

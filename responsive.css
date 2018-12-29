@@ -1280,6 +1280,79 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 1 - Good Page --*/
+
+	.good-templ .left {
+	    width: 100%;
+	    float: none;
+	    padding: 22px 0 12px 0;
+	}
+
+	.good-templ .right {
+	    width: 100%;
+	    float: none;
+	    padding: 12px 0 0 0;
+	}
+
+	.big-slider_wrapp {
+		max-width: 434px;
+		margin: 0 auto;
+	}
+
+	.good-info-header > .col:nth-child(1),
+	.good-info-header > .col:nth-child(2) {
+	    padding: 0;
+	}
+
+	.good-info_sect .inner-row {
+	    padding: 9px 15px 16px 15px;
+	    text-align: center;
+	}
+
+	.good-total-price {
+		display: inline-block !important;
+		vertical-align: top;
+		width: auto !important;
+	}
+
+	.tabs {
+	    margin: 10px 0 0 0;
+	}
+
+	.tabs-links_wrapp {
+	    padding: 6px 15px 3px 15px;
+	}
+
+	.tabs-content .tab {
+	    padding-top: 8px;
+	}
+
+	.good_table h3 {
+	    padding: 0 0 0 15px;
+	}
+
+	.slBtnWrapp {
+	    padding: 30px 15px 0 15px;
+	}
+
+	.good-info_sect .three-cols {
+	    padding: 0 15px;
+	}
+
+	.inner-row_3 {
+	    padding: 18px 15px 18px 15px;
+	}
+
+	.good_table h3.resp_h {
+	    width: 157px;
+	}
+
+	.yellow_box {
+	    padding: 28px 15px;
+	}
+
+	/*-- /Section 1 - Good Page --*/
+
 	/*-- Footer --*/
 
 	.footer_col {
@@ -1789,6 +1862,34 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 1 - Good Page --*/
+
+	.big-slider .slick-prev {
+	    left: -10px !important;
+	}
+
+	.big-slider .slick-next {
+	    right: -10px !important;
+	}
+
+	.big-slider .img-box {
+	    height: 200px;
+	}
+
+	.miniature-slider {
+	    margin: 0;
+	}
+
+	.miniature-slider .img-box {
+	    height: 55px;
+	}
+
+	.miniature-slider .slide {
+	    padding: 1px;
+	}
+
+	/*-- /Section 1 - Good Page --*/
+
 }
 
 @media only screen and (max-width: 410px) {
@@ -1851,6 +1952,16 @@
 	}
 
 	/*-- /Section 2 - Main Page --*/
+
+	/*-- Section 1 - Good Page --*/
+
+	.black_link {
+	    font-size: 11px;
+	    line-height: 21px;
+	    font-weight: bold;
+	}
+
+	/*-- /Section 1 - Good Page --*/
 
 }
 

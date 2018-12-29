@@ -4526,7 +4526,7 @@ p.percents_minus {
 
 .input_wrapp_2 i {
     position: absolute;
-    top: 15px;
+    top: 16px;
     left: 14px;
     font-size: 14px;
     color: rgba(177, 116, 51, .5);
@@ -5162,6 +5162,7 @@ p.total-price .ruble_2 {
 
 .slBtnWrapp .slideBtn {
     width: 100%;
+    min-width: 100%;
     margin: 0;
 }
 
@@ -5952,6 +5953,25 @@ body.popupshow {
 
 .popup_3 p {
     padding: 7px 0;
+}
+
+.popup_5 .inputs_wrapp {
+    margin: 25px 0 21px 0;
+}
+
+.popup_5 {
+    padding-bottom: 20px;
+}
+
+.popup_5 .brown_pill {
+    min-width: 170px;
+}
+
+.h2-desc {
+    max-width: 230px;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    line-height: 19px;
 }
 
 /*-- /Popups --*/
