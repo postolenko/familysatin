@@ -13,16 +13,7 @@ $(window).on("resize",function(){
 
 });
 
-$(document).ready(function() {		
-
-	$("select").each(function() {
-
-		$(this).select2({
-			minimumResultsForSearch: Infinity,
-			width: '100%'
-		});
-
-	});
+$(document).ready(function() {
 
 	$(".tape_slder").not(".slick-initialized").slick({
         dots: false,
