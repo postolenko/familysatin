@@ -68,23 +68,6 @@ $(document).ready(function() {
         speed: 1200,
         slidesToShow: 1,
         slidesToScroll: 1
-        // variableWidth: true
-    //     responsive: [
-		  //   {
-		  //     breakpoint: 800,
-		  //     settings: {
-		  //       slidesToShow: 2,
-		  //       slidesToScroll: 2
-		  //     }
-		  //   },
-		  //   {
-		  //     breakpoint: 530,
-		  //     settings: {
-		  //       slidesToShow: 1,
-		  //       slidesToScroll: 1
-		  //     }
-		  //   }
-		  // ]
     });
 
     $(".articles_slider_2").not(".slick-initialized").slick({
@@ -96,23 +79,6 @@ $(document).ready(function() {
         speed: 1200,
         slidesToShow: 1,
         slidesToScroll: 1
-        // variableWidth: true
-    //     responsive: [
-		  //   {
-		  //     breakpoint: 800,
-		  //     settings: {
-		  //       slidesToShow: 2,
-		  //       slidesToScroll: 2
-		  //     }
-		  //   },
-		  //   {
-		  //     breakpoint: 530,
-		  //     settings: {
-		  //       slidesToShow: 1,
-		  //       slidesToScroll: 1
-		  //     }
-		  //   }
-		  // ]
     });
 
     $(".goods_slider").not(".slick-initialized").slick({
@@ -229,49 +195,6 @@ function getSlider() {
 		}
 
 	}
-
-	// if( bodyWidth <= 1160 ) {
-
-	// 	$(".articles_slider .article_thumb").unwrap(".inner_wrapp");
-
-	// 	$(".articles_slider").not(".slick-initialized").slick({
-	//         dots: false,
-	//         arrows: true,
-	//         loop: false,
-	//         autoplay: true,
-	//         autoplaySpeed: 5000,
-	//         speed: 1200,
-	//         slidesToShow: 1,
-	//         slidesToScroll: 1,
-	//         responsive: [
-	// 		    {
-	// 		      breakpoint: 1160,
-	// 		      settings: {
-	// 		        slidesToShow: 1,
-	// 		        slidesToScroll: 1
-	// 		      }
-	// 		    }
-	// 		  ]
-	//     });
-
-	// } else {
-
-	// 	$(".articles_slider .article_thumb").wrap(".inner_wrapp");
-
-	// 	$(".articles_slider").not(".slick-initialized").slick({
-	//         dots: false,
-	//         arrows: true,
-	//         loop: false,
-	//         autoplay: true,
-	//         autoplaySpeed: 5000,
-	//         speed: 1200,
-	//         slidesToShow: 2,
-	//         slidesToScroll: 1
-	//     });
-
-
-
-	// }
 
 }
 

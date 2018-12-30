@@ -94,6 +94,13 @@ body {
     background: #ffffff;
 }
 
+body.load {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .wrapper {
     width: 100%;
     position: relative;
@@ -1118,10 +1125,6 @@ ol li .fa-angle-right {
     padding: 38px 0 20px 0;
 }
 
-.breadcrumbs ul {
-
-}
-
 .breadcrumbs ul li {
     display: inline-block;
     vertical-align: top;
@@ -1187,7 +1190,6 @@ ol li .fa-angle-right {
 
 /*-- /Breadcrumbs --*/
 
-
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -1224,10 +1226,6 @@ ol li .fa-angle-right {
 
 .main-nav_wrapp {
     margin: 2px 8px;
-}
-
-.main-nav {
-
 }
 
 .main-nav li {
@@ -1276,10 +1274,6 @@ ol li .fa-angle-right {
 
 .main-nav li a:hover {
     opacity: 1;
-}
-
-.soclink_box {
-
 }
 
 .soclink_box_2 span {
@@ -4324,10 +4318,6 @@ p.percents_minus {
     padding-bottom: 11px;
 }
 
-.card_table_2 {
-
-}
-
 .card_table_2 .table-row:nth-child(1) {
     border: 1px solid #e8e6e1;
 }
@@ -4347,10 +4337,6 @@ p.percents_minus {
 
 .order_sect .totals_wrapp {
     margin: 11px 0;
-}
-
-.two_cols_2 {
-
 }
 
 .two_cols_2 > .left {
@@ -4456,9 +4442,8 @@ p.percents_minus {
     width: 100%;
     min-height: 162px;
     opacity: 0;
-    overflow: hidden;
     z-index: -1;
-    position: absolute;
+    position: relative;
     top: 0;
     left: -99999999px;
     padding: 20px 0;
@@ -4483,8 +4468,11 @@ p.percents_minus {
     transition-timing-function: ease;
 }
 
+.tabs.activated .tab {
+    position: absolute;
+}
+
 .tabs-content .radio-tab:checked + .tab {
-    overflow: none;
     z-index: 1;
     position: relative;
     opacity: 1;
@@ -4843,24 +4831,12 @@ p.percents_minus {
     padding: 32px 0 32px 15px;
 }
 
-.big-slider_wrapp {
-
-}
-
-.big-slider {
-
-}
-
 .big-slider .slick-prev {
     left: 18px;
 }
 
 .big-slider .slick-next {
     right: 18px;
-}
-
-.big-slider .slide {
-
 }
 
 .big-slider .img-box {
@@ -4885,7 +4861,6 @@ p.percents_minus {
 .miniature-slider .img-box {
     cursor: pointer;
     height: 106px;
-    /*width: 118px;*/
     width: auto;
     border-style: solid;
     border-width: 3px;
@@ -5011,7 +4986,7 @@ p.total-price .ruble_2 {
     width: 18px;
     height: 27px;
     position: relative;
-    top: 5px;
+    top: 6px;
 }
 
 .inner-row_2 {
@@ -5358,10 +5333,6 @@ p.total-price .ruble_2 {
     padding: 9px 30px;
 }
 
-.description_good {
-
-}
-
 .articlum {
     display: table;
     width: 100%;
@@ -5411,12 +5382,6 @@ p.total-price .ruble_2 {
 }
 
 /*-- /Section 2 - Good Page --*/
-
-
-
-
-
-
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

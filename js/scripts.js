@@ -20,6 +20,11 @@ var countVal;
 
 // --------------
 
+var dropdownMenuName;
+var dropdownMenu;
+
+// --------------
+
 $(window).load(function() {
 
 	getFooterPosition();
@@ -57,6 +62,8 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
+
+    $("body").addClass("load");
 
 	// ---------------------------------------
 
@@ -181,67 +188,50 @@ $(document).ready(function() {
 
 	});
 
-	$("[data-dropdownbtn2], .select_input").on('click', function(e) {
+    $("[data-dropdownbtn2], .select_input").on('click', function(e) {
 
         e.preventDefault();
 
-        $(".dropdowm_select_menu .select_input").removeClass("active");        
-        $(".dropdown_btn_2").removeClass("active");
-        $("[data-dropdown2]").removeClass("active");
-        $("[data-dropdown2]").css({
+        if( $(this).hasClass("select_input") ) {
+
+            dropdownMenuName = $(this).closest(".dropdowm_select_menu").find('[data-dropdownbtn2]').attr("data-dropdownbtn2");
+            dropdownMenu = $("[data-dropdown2 = '"+ dropdownMenuName + "']");
+
+        } else {
+
+            dropdownMenu = $("[data-dropdown2 = '"+ $(this).attr("data-dropdownbtn2") + "']");
+
+        }
+
+        if( $(this).hasClass("active") ) {
+
+            dropdownMenu.removeClass("active");
+            $(this).removeClass("active");
+            setTimeout(function() {
+                dropdownMenu.css({
                     "left" : -9999999 + "px"
                 });
+            }, 400);
 
-        console.log("");
+        } else {
 
-        var dropdownMenuName;
-        var dropdownMenu;
+            $(".dropdowm_select_menu .select_input").removeClass("active");        
+            $(".dropdown_btn_2").removeClass("active");
+            $("[data-dropdown2]").removeClass("active");
+            $("[data-dropdown2]").css({
+                "left" : -9999999 + "px"
+            });
 
-		
-
-        // $(".dropdowm_select_menu .select_input").each(function(){
-        //     // if($(this).hasClass("active")) {
-        //         var self = this;
-        //         $(self).removeClass("active");
-        //         parentBlock = $(self).closest(".dropdowm_select_menu");
-        //         parentBlock.find(".dropdown_btn_2").removeClass("active");
-        //         dropdownMenu = parentBlock.find("[data-dropdown2]").removeClass("active");
-        //         dropdownMenu.css({
-        //             "left" : -9999999 + "px"
-        //         });
-        //     // }
-        // });
-
-		if( $(this).hasClass("select_input") ) {
-
-			var dropdownMenuName = $(this).closest(".dropdowm_select_menu").find('[data-dropdownbtn2]').attr("data-dropdownbtn2");
-
-			var dropdownMenu = $("[data-dropdown2 = '"+ dropdownMenuName + "']");
-
-		} else {
-
-			dropdownMenu = $("[data-dropdown2 = '"+ $(this).attr("data-dropdownbtn2") + "']");
-
-		}
-
-		if(dropdownMenu.hasClass("active")) {
-			dropdownMenu.removeClass("active");
-            $(this).removeClass("active");
-			setTimeout(function() {
-				dropdownMenu.css({
-					"left" : -9999999 + "px"
-				});
-			}, 400);
-
-		} else {
-			dropdownMenu.css({
-				"left" : 0
-			});
+            dropdownMenu.css({
+                    "left" : 0
+                });
             $(this).addClass("active");
-			dropdownMenu.addClass("active");
-		}
+            dropdownMenu.addClass("active");
 
-	});
+        }
+
+
+    });
 
 	$(document).mouseup(function (e){
 
@@ -383,7 +373,17 @@ $(document).ready(function() {
         attrForTabLink = $(this).find(".tab-link").eq(indexActiveTab).attr("for");
         activeTabRadio = $(this).find(".radio-tab[id = '"+ attrForTabLink +"']");
         activeTabRadio.prop("checked", true);
-        $(this).find(".tab-link").eq(indexActiveTab).addClass("active");
+        var activeHeight = activeTabRadio.next(".tab").height();
+        $(this).find(".tabs-content").css({
+                "min-height" : activeHeight + "px"
+            });
+        $(this).find(".tab-link").eq(indexActiveTab).addClass("active");        
+        setTimeout(function() {
+            $(this).find(".tabs-content").css({
+                "min-height" : "auto"
+            });
+        }, 300);
+        $(this).addClass("activated");
 
     });
 
@@ -581,9 +581,9 @@ $(document).ready(function() {
 
         }
 
-        console.log(slName);
-
     });
+
+    $("body").removeClass("load");
 
 });
 
