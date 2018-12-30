@@ -409,6 +409,19 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 1 - Good Page --*/
+
+	.thumbnails_1_2 .thumb_1 .col:nth-child(1) {
+	    display: table-cell;
+	}
+
+	.thumbnails_1_2 .thumb_1 .col:nth-child(2) {
+	    display: table-cell;
+	    text-align: left;
+	}
+
+	/*-- /Section 1 - Good Page --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 .left {

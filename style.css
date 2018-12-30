@@ -3282,6 +3282,7 @@ p.percents_minus {
 }
 
 .catalog_thumb .img-box {
+    display: block;
     height: 240px;
     margin-bottom: 22px;
     background-color: #272220;
@@ -4456,6 +4457,7 @@ p.percents_minus {
 
 .tabs-content .tab {
     width: 100%;
+    overflow: hidden;
     min-height: auto;
     opacity: 0;
     z-index: -1;
