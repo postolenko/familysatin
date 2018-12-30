@@ -373,16 +373,7 @@ $(document).ready(function() {
         attrForTabLink = $(this).find(".tab-link").eq(indexActiveTab).attr("for");
         activeTabRadio = $(this).find(".radio-tab[id = '"+ attrForTabLink +"']");
         activeTabRadio.prop("checked", true);
-        var activeHeight = activeTabRadio.next(".tab").height();
-        $(this).find(".tabs-content").css({
-                "min-height" : activeHeight + "px"
-            });
-        $(this).find(".tab-link").eq(indexActiveTab).addClass("active");        
-        setTimeout(function() {
-            $(this).find(".tabs-content").css({
-                "min-height" : "auto"
-            });
-        }, 300);
+        $(this).find(".tab-link").eq(indexActiveTab).addClass("active");
         $(this).addClass("activated");
 
     });

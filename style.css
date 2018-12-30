@@ -4456,7 +4456,7 @@ p.percents_minus {
 
 .tabs-content .tab {
     width: 100%;
-    min-height: 162px;
+    min-height: auto;
     opacity: 0;
     z-index: -1;
     position: relative;
@@ -5352,6 +5352,7 @@ p.total-price .ruble_2 {
 .articlum {
     display: table;
     width: 100%;
+    margin-bottom: 14px;
 }
 
 .articlum .col:nth-child(1) {
@@ -5375,10 +5376,6 @@ p.total-price .ruble_2 {
 
 .articlum p.grey-p {
     color: #9c9a99;
-}
-
-.text_box {
-    margin: 15px 0;
 }
 
 .text_box p {
