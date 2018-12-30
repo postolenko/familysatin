@@ -125,6 +125,7 @@ $(document).ready(function() {
         speed: 1200,
         slidesToShow: 5,
         slidesToScroll: 1,
+        infinite: false,
         asNavFor: '.big-slider',
         focusOnSelect: true,
         responsive: [
