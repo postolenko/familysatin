@@ -14,12 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
-	<script type="text/javascript" src="vendors/js/jquery.js"></script>
-	<script type="text/javascript" src="slick/slick.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Family Satin</title>
 
@@ -844,11 +839,11 @@
 						<div class="inputs_wrapp">
 							<div class="input_wrapp_2">
 								<i class="fas fa-user-circle"></i>
-                   				<input type="text" name="*" placeholder="Ваше имя">
+                   				<input type="text" name="" placeholder="Ваше имя">
                    			</div>
                    			<div class="input_wrapp_2">
 								<i class="fas fa-envelope-open"></i>
-                   				<input type="email" name="*" placeholder="Ваш телефон">
+                   				<input type="email" name="" placeholder="Ваш телефон">
                    			</div>
                    		</div>
                			<div class="submit_box_2">
@@ -871,11 +866,11 @@
 						<div class="inputs_wrapp">
 							<div class="input_wrapp_2">
 								<i class="fas fa-envelope-open"></i>
-                   				<input type="email" name="*" placeholder="Ваш Email">
+                   				<input type="email" name="" placeholder="Ваш Email">
                    			</div>
                    			<div class="input_wrapp_2">
                    				<i class="fas fa-lock"></i>
-                   				<input type="password" name="*" placeholder="Пароль">
+                   				<input type="password" name="" placeholder="Пароль">
                    			</div>
                    		</div>
                			<div class="submit_box_2">
@@ -909,7 +904,71 @@
 	           		</div>
 	       			<div class="links_wrapp">
 	       				<p><a href="#">Забыли логин или пароль?</a></p>
-	       				<p class="up_link"><a href="#">Регистрация</a><i class="fas fa-angle-right"></i></p>
+	       				<p class="up_link"><a href="#" class="show_popup" data-popup-name = "popup_10">Регистрация</a><i class="fas fa-angle-right"></i></p>
+	       			</div>
+	       		</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_wrapp" data-popup ="popup_10">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup">
+				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
+				<div class="popup_inner">
+					<h2>Регистрация</h2>
+					<form>
+						<div class="inputs_wrapp">
+							<div class="input_wrapp_2">
+								<i class="fas fa-user-circle"></i>
+                   				<input type="text" name="" placeholder="Ваше имя">
+                   			</div>
+                   			<div class="input_wrapp_2">
+								<i class="fas fa-envelope-open"></i>
+                   				<input type="email" name="" placeholder="Ваш Email">
+                   			</div>
+                   			<div class="input_wrapp_2">
+                   				<i class="fas fa-lock"></i>
+                   				<input type="password" name="" placeholder="Пароль">
+                   			</div>
+                   			<div class="input_wrapp_2">
+                   				<i class="fas fa-lock"></i>
+                   				<input type="password" name="" placeholder="Повторите пароль">
+                   			</div>
+                   		</div>
+               			<div class="submit_box_2">
+               				<button type="submit" class="brown_pill">Зарегистрироваться</button>
+               			</div>
+               		</form>
+           			<p class="p-line"><span>или</span></p>
+           			<div class="soc_wrapp">
+	           			<ul class="soc_list">
+	           				<li>
+	           					<a href="#">
+	           						<i class="vk"></i>
+	           					</a>
+	           				</li>
+	           				<li>
+	           					<a href="#">
+	           						<i class="fb"></i>
+	           					</a>
+	           				</li>
+	           				<li>
+	           					<a href="#">
+	           						<i class="tw"></i>
+	           					</a>
+	           				</li>
+	           				<li>
+	           					<a href="#">
+	           						<i class="od"></i>
+	           					</a>
+	           				</li>
+	           			</ul>
+	           		</div>
+	       			<div class="links_wrapp">
+	       				<p><a href="#" class="noline">Уже есть аккаунт?</a></p>
+	       				<p class="up_link"><a href="#" class="show_popup" data-popup-name = "popup_2">Войти</a><i class="fas fa-angle-right"></i></p>
 	       			</div>
 	       		</div>
 			</div>
@@ -918,6 +977,11 @@
 
 	<!-- /Popup -->
 
+	<script src="vendors/js/jquery.js"></script>
+	<script src="slick/slick.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="vendors/js/smoothscroll.js"></script>
+	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>
 
