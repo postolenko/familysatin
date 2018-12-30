@@ -2008,6 +2008,10 @@
 		display: block !important;
 	}
 
+	.resp_nav {
+		display: none !important;
+	}
+
 }
 
 @media only screen and (min-width: 1125px) {
