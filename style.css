@@ -3287,7 +3287,6 @@ p.percents_minus {
 }
 
 .catalog_thumb .img-box {
-    display: block;
     height: 240px;
     margin-bottom: 22px;
     background-color: #272220;
@@ -4863,6 +4862,7 @@ p.percents_minus {
 }
 
 .big-slider .img-box {
+    display: block;
     height: 536px;
     background-size: cover;
     background-position: center;
@@ -4882,6 +4882,7 @@ p.percents_minus {
 }
 
 .miniature-slider .img-box {
+    display: block;
     cursor: pointer;
     height: 106px;
     width: auto;
