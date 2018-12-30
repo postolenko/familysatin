@@ -21,16 +21,17 @@
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<title>Family Satin</title>
 
 </head>
 
-<body class="popupshow">
+<body>
 
 	<div class="wrapper">
 
 	<!-- Header -->
 		
-		<header class="header-site">
+	<header class="header-site">
 
 		<div class="row-1">
 			<div class="row clearfix">
@@ -52,8 +53,8 @@
 					</div>
 					<div class="inline">
 						<div class="append-elem"  data-append-desktop-elem = "1" data-min-screen = "750">
-							<!-- <a href="#" class="orange_pill">Вход</a> -->
-							<a href="#" class="orange_pill">Выход</a>
+							<a href="#" class="orange_pill show_popup" data-popup-name = "popup_2">Вход</a>
+							<!-- <a href="#" class="orange_pill">Выход</a> -->
 						</div>
 					</div>
 
@@ -68,7 +69,7 @@
 		<div class="row-2">
 			<div class="row clearfix">
 				<div class="left">
-					<button type="text" class="resp_btn"></button>
+					<button type="button" class="resp_btn"></button>
 					<div class="callback_wrapp">
 						<div class="callback_link">
 							<div class="col">
@@ -78,7 +79,7 @@
 							</div>
 							<div class="col">
 								<p><a href="tel:+74957770885">+7 (495) 777 08 85</a></p>
-								<p><a href="#" class="orange_pill">Заказать звонок</a></p>
+								<p><a href="#" class="orange_pill show_popup" data-popup-name = "popup_1">Заказать звонок</a></p>
 							</div>
 						</div>
 						<a class="whatsup_link" href="https://wa.me/74957770885"><i class="whatsup"></i></a>
@@ -186,7 +187,7 @@
 					<div class="col">
 						<div class="overflow_wrapp">
 							<div class="thumbnails_1 offset-ziro">
-								<div class="thumb_1">
+								<a href="#" class="thumb_1">
 									<div class="col">
 										<div class="icon_box">
 											<div class="inner">
@@ -197,8 +198,8 @@
 									<div class="col">
 										<p>Только высокое качество текстиля</p>
 									</div>
-								</div>
-								<div class="thumb_1">
+								</a>
+								<a href="#" class="thumb_1">
 									<div class="col">
 										<div class="icon_box">
 											<div class="inner">
@@ -207,10 +208,10 @@
 										</div>
 									</div>
 									<div class="col">
-										<p>Бесплатная доставка до двери</p>
+										<p>Бесплатная<br /> доставка до двери</p>
 									</div>
-								</div>
-								<div class="thumb_1">
+								</a>
+								<a href="#" class="thumb_1">
 									<div class="col">
 										<div class="icon_box">
 											<div class="inner">
@@ -221,7 +222,7 @@
 									<div class="col">
 										<p>Лучшие бренды по самым низким ценам</p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -396,7 +397,7 @@
 				<button type="button" class="close-popup"><i class="fas fa-times"></i></button>
 				<div class="popup_inner">
 					<h2>Вход</h2>
-					<forn>
+					<form>
 						<div class="inputs_wrapp">
 							<div class="input_wrapp_2">
 								<i class="fas fa-envelope-open"></i>
@@ -410,7 +411,7 @@
                			<div class="submit_box_2">
                				<button type="submit" class="brown_pill">Зарегистрироваться</button>
                			</div>
-               		</forn>
+               		</form>
            			<p class="p-line"><span>или</span></p>
            			<div class="soc_wrapp">
 	           			<ul class="soc_list">
