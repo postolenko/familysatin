@@ -1381,6 +1381,7 @@ ol li .fa-angle-right {
 .callback_link {
     display: inline-table;
     vertical-align: top;
+    position: relative;
 }
 
 .callback_link .col:nth-child(1) {
@@ -1413,11 +1414,15 @@ ol li .fa-angle-right {
     min-width: calc(100% - 25px);
     font-family: "Ubuntu";
     font-size: 13px;
-    line-height: 1.2;
+    line-height: 15px;
     color: rgb(255, 255, 255);
     position: absolute;
-    bottom: -20px;
-    left: 0;
+    top: 100%;
+    margin: -16px;
+}
+
+.ie .callback_link .col:nth-child(2) .orange_pill {
+    margin-top: 11px;
 }
 
 .whatsup {
