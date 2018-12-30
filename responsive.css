@@ -1155,6 +1155,10 @@
 	    width: 100%;
 	}
 
+	.dropdowm_select_menu_2 {
+	    width: 170px;
+	}
+
 	.filter_resp_nav {
 		display: block;
 		min-height: 100%;
@@ -1207,7 +1211,6 @@
 		vertical-align: middle;
 		width: 25px;
 		height: 25px;
-		margin-left: 10px;
 		border: 1px solid #f0eeea;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
@@ -1988,6 +1991,14 @@
 
 	.text_btn .fa-angle-right {
 	    margin-left: 3px;
+	}
+
+	.dropdowm_select_menu_2 {
+	    width: 147px;
+	}
+
+	.select_input {
+	    padding: 1px 32px 1px 13px;
 	}
 
 	/*-- /Section 2 - Main Page --*/

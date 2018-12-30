@@ -2111,7 +2111,7 @@ ol li .fa-angle-right {
     border: none !important;
     border-color: none !important;
     border-radius: 0 !important;
-    padding: 1px 24px 1px 13px;
+    padding: 1px 35px 1px 13px;
     text-transform: uppercase;
     letter-spacing: .8px;
     font-family: "Ubuntu";
@@ -3179,7 +3179,7 @@ p.percents_minus {
 }
 
 .dropdowm_select_menu_2 {
-    width: 155px;
+    width: 160px;
     cursor: pointer;
 }
 
