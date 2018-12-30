@@ -435,14 +435,14 @@
 	}
 
 	.callback_from_wrapp .callback_from {
-	 	display: inline-table;
+	 	display: table-cell;
 	 	vertical-align: middle;
 	 	width: 53%;
 	 	margin: 0;
 	}
 
 	.callback_from_wrapp .p_wrapp {
-		display: inline-table;
+		display: table-cell;
 	 	vertical-align: middle;
 	 	width: 47%;
 	 	padding-left: 3%;

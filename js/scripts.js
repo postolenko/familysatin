@@ -434,6 +434,8 @@ $(document).ready(function() {
 
         e.preventDefault();
 
+        $(".popup_wrapp").fadeOut(300);
+
         popupName = $(this).attr("data-popup-name");
         popupBlock = $("[data-popup = '"+ popupName +"']");
 

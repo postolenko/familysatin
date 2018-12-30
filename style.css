@@ -2100,12 +2100,14 @@ ol li .fa-angle-right {
 
 .dropdowm_select_menu {
     position: relative;
+    cursor: pointer;
 }
 
 .select_input {
     display: block;
     width: 100%;
     height: 34px;
+    cursor: pointer;
     border: none !important;
     border-color: none !important;
     border-radius: 0 !important;
@@ -2842,6 +2844,7 @@ p.percents_minus {
     letter-spacing: .5px;
     font-family: "Ubuntu";
     font-size: 13px;
+    font-weight: 500;
     color: #272220;
 }
 
@@ -2856,7 +2859,7 @@ p.percents_minus {
 }
 
 .dropdown_box .slide_btn_2 {
-    top: 6px;
+    top: 7px;
 }
 
 .slide_btn_2 i {
@@ -2919,6 +2922,7 @@ p.percents_minus {
     font-family: "Ubuntu";
     font-size: 13px;
     line-height: 16px;
+    font-weight: 500;
     color: rgb(144, 125, 111);
     -webkit-transition-property: background, color;
     -webkit-transition-duration: .3s;
@@ -3018,9 +3022,11 @@ p.percents_minus {
 .dashed_link {
     border-bottom: 1px dashed rgb(39, 34, 32);
     position: relative;
+    letter-spacing: 1px;
     font-size: 13px;
     line-height: 13px;
     font-family: "Ubuntu";
+    font-weight: 500;
     color: rgb(39, 34, 32);
     text-transform: uppercase;
     -webkit-transition-property: border;
@@ -3154,6 +3160,7 @@ p.percents_minus {
 }
 
 .checkbox_2 label {
+    cursor: pointer;
     padding: 7px 10px;
     font-size: 12px;
     -webkit-border-radius: 3px;
@@ -3173,6 +3180,7 @@ p.percents_minus {
 
 .dropdowm_select_menu_2 {
     width: 155px;
+    cursor: pointer;
 }
 
 .dropdowm_select_menu_2 .select_input {
@@ -3220,7 +3228,7 @@ p.percents_minus {
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
-    height: 500px;
+    height: 495px;
     position: relative;
 }
 
@@ -3230,7 +3238,7 @@ p.percents_minus {
 
 .catalog_thumb .inner {
     width: 100%;
-    height: 500px;
+    height: 495px;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -3262,7 +3270,7 @@ p.percents_minus {
 }
 
 .catalog_thumb:hover .inner {
-    height: 540px;
+    height: 535px;
     cursor: pointer;
     width: calc(100% + 40px);
     top: -20px;
@@ -3306,7 +3314,7 @@ p.percents_minus {
 
 .catalog_thumb h3 {
     display: block;
-    min-height: 37px;
+    min-height: 50px;
     font-size: 21px;
     line-height: 24px;
     color: #272220;
@@ -3414,12 +3422,13 @@ p.percents_minus {
     position: relative;
     max-width: 246px;
     margin: 0 auto;
-    padding: 5px 35px 0 35px;
+    padding: 7px 35px 0 35px;
 }
 
 .thumb_footer .brown_pill {
     min-width: 176px;
     max-width: 176px;
+    padding: 11px 10px;
 }
 
 .fa-heart {
@@ -5865,7 +5874,7 @@ body.popupshow {
 }
 
 .links_wrapp p {
-    padding: 2px 0;
+    padding: 4px 0;
     text-align: center;
 }
 
