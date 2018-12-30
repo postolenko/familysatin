@@ -1682,7 +1682,7 @@
 	}
 
 	.descript_table {
-	    margin-bottom: 9px;
+		margin: 4px 0;
 	}
 
 	.descript_table p {
@@ -1721,6 +1721,7 @@
 	.thumb_footer .brown_pill {
 		min-width: 100%;
 	    max-width: 104px;
+	    margin: 2px 0;
 	    padding: 6px 6px;
 	}
 
