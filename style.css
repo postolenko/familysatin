@@ -4025,7 +4025,7 @@ p.percents_minus {
 
 .card_table .inline-table:nth-child(2) .table-cell:nth-child(4) {
     width: auto;
-    padding-right: 60px;
+    padding-right: 70px;
     position: relative;
 }
 
@@ -4033,7 +4033,7 @@ p.percents_minus {
     margin-top: -8px;
     position: absolute;
     top: 50%;
-    right: 48px;
+    right: 58px;
 }
 
 .card_table h3 {
