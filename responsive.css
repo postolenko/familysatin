@@ -580,9 +580,13 @@
 	    right: -2px;
 	}
 
+	.callback_link .col:nth-child(2) .orange_pill {
+		margin-top: -1px;
+	}
+
 	.header_card {	    
 	    min-width: auto;
-	    max-width: 236px;
+	    max-width: 244px;
 		width: 100%;
 	}
 
