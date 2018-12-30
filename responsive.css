@@ -388,11 +388,11 @@
 	}
 
 	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) {
-		padding-right: 20px;
+		padding-right: 40px;
 	}
 
 	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) .close_btn {
-	    right: 4px;
+	    right: 40px;
 	}
 
 	.card_table .table-row:nth-child(1) .inline-table:nth-child(1) .table-cell:nth-child(1) {
@@ -927,6 +927,14 @@
 	.reg_form {
 	    margin: 0;
 	    max-width: 100%;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) {
+	    padding-right: 20px;
+	}
+
+	.card_table .inline-table:nth-child(2) .table-cell:nth-child(4) .close_btn {
+	    right: 7px;
 	}
 
 	/*-- /Section 1 - Order Page --*/
