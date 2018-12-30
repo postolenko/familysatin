@@ -1649,6 +1649,14 @@
 
 	/*-- Section 2 - Main Page --*/
 
+	.filter_list {
+	    margin: 0 -4px;
+	}
+
+	.checkbox_2 {
+	    margin: 4px;
+	}
+
 	.catalog_thumbs {
 	    margin: 8px -5px 15px -5px;
 	}
