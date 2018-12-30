@@ -845,7 +845,7 @@ ol li .fa-angle-right {
     text-align: center;
     background-color: rgb(255, 180, 86);
     margin: 1px 0;
-    padding: 10px 10px;
+    padding: 7px 10px;
     border: 1px solid transparent;
     -webkit-border-radius: 17px;
     -moz-border-radius: 17px;
@@ -853,7 +853,7 @@ ol li .fa-angle-right {
     text-transform: uppercase;
     font-family: "Ubuntu";
     font-size: 13px;
-    line-height: 1.2;
+    line-height: 15px;
     color: rgb(255, 255, 255);
     -webkit-transition-property: background-color;
     -webkit-transition-duration: .3s;
