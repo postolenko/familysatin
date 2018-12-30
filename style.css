@@ -3281,6 +3281,11 @@ p.percents_minus {
     box-shadow: 0 10px 40px 0 rgba(31, 28, 22, .4);
 }
 
+.ie .catalog_thumb:hover .inner {
+    width: 100%;
+    left: 0;
+}
+
 .catalog_thumb .img-box {
     display: block;
     height: 240px;

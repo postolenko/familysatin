@@ -29,6 +29,7 @@ $(window).load(function() {
 
 	getFooterPosition();
 	showScrollTopBtn();
+    detectIE();
 
 	$(".dropdown_card_menu").addClass("properties");
 	$(".dropdown").addClass("properties");
