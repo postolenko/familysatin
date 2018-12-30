@@ -5972,3 +5972,11 @@ body.popupshow {
 }
 
 /*-- /Popups --*/
+
+/*-- IE --*/
+
+.ie .card_table :nth-child(2) .inline-table:nth-child(4) .table-cell .close_btn {
+    margin-top: 7px;
+}
+
+/*-- /IE --*/
