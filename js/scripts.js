@@ -29,7 +29,6 @@ $(window).load(function() {
 
 	getFooterPosition();
 	showScrollTopBtn();
-    detectIE();
 
 	$(".dropdown_card_menu").addClass("properties");
 	$(".dropdown").addClass("properties");
@@ -635,20 +634,5 @@ function getAdaptivePositionElements() {
         }
 
     });
-
-}
-
-function detectIE() {
-    var ua = window.navigator.userAgent;
-
-    var msie = ua.indexOf('MSIE');
-    var trident = ua.indexOf('Trident/');
-    var edge = ua.indexOf('Edge/');
-
-    if ( msie > 0 || trident > 0 || edge > 0 ) {
-        document.getElementsByTagName("html")[0].classList.add("ie");
-    }
-
-    return false;
 
 }

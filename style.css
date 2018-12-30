@@ -845,7 +845,7 @@ ol li .fa-angle-right {
     text-align: center;
     background-color: rgb(255, 180, 86);
     margin: 1px 0;
-    padding: 7px 10px;
+    padding: 6px 10px 7px 10px;
     border: 1px solid transparent;
     -webkit-border-radius: 17px;
     -moz-border-radius: 17px;
@@ -964,7 +964,7 @@ ol li .fa-angle-right {
     background-color: rgb(144, 125, 111);
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     font-family: "Ubuntu";
     font-size: 13px;
     line-height: 14px;
@@ -1410,19 +1410,21 @@ ol li .fa-angle-right {
     transform: translate(0, -50%);
 }
 
+.orange_pill_box {
+    position: relative;
+}
+
 .callback_link .col:nth-child(2) .orange_pill {
     min-width: calc(100% - 25px);
+    width: 100%;
     font-family: "Ubuntu";
     font-size: 13px;
     line-height: 15px;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 100%;
-    margin: -16px;
-}
-
-.ie .callback_link .col:nth-child(2) .orange_pill {
-    margin-top: 11px;
+    right: 0;
+    margin-top: 7px;
 }
 
 .whatsup {
@@ -3846,6 +3848,7 @@ p.percents_minus {
 
 .tape_slder_wrapp {
     position: relative;
+    overflow: hidden;
 }
 
 .photo_thumb {
@@ -3930,7 +3933,8 @@ p.percents_minus {
     vertical-align: middle;
     padding-top: 2px;
     padding-left: 16px;
-    letter-spacing: .5px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .tape_slder_wrapp .soc_link_2 {
@@ -5455,7 +5459,7 @@ p.total-price .ruble_2 {
 .seo-text li a {
     display: inline;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     font-family: "Ubuntu";
     font-size: 12px;
     line-height: 12px;
@@ -5584,7 +5588,7 @@ p.total-price .ruble_2 {
     padding: 0 65px 0 18px;
     border: 1px solid transparent;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     font-size: 12px;
     line-height: 47px;
     font-family: "Ubuntu";
