@@ -53,7 +53,6 @@ $(document).ready(function() {
     $(".articles_slider").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        loop: false,
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1200,
@@ -64,7 +63,6 @@ $(document).ready(function() {
     $(".articles_slider_2").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        loop: false,
         autoplay: true,
         // autoplaySpeed: 5000,
         speed: 1200,
@@ -75,7 +73,6 @@ $(document).ready(function() {
     $(".goods_slider").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        loop: false,
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1200,
